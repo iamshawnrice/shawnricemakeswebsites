@@ -29,9 +29,8 @@ class Admin extends Component {
 
   addItem(itemData) {
     const items = this.state.items;
-    const timestamp = Date.now();
 
-    items[`item${timestamp}`] = itemData;
+    items[itemData.id] = itemData;
 
     this.setState({items});
   }

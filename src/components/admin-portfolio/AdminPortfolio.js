@@ -11,7 +11,7 @@ class AdminPortfolio extends Component {
           {
             Object
               .keys(this.props.items)
-              .map(key => <AdminPortfolioItem id={key} key={key}/>)
+              .map(key => <AdminPortfolioItem item={this.props.items[key]} key={key}/>)
           }
         </div>
       </div>
