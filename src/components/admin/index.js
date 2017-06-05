@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import AdminPortfolio from '../admin-portfolio/AdminPortfolio';
-import AdminForm from '../admin-form/AdminForm';
+import AdminPortfolio from './portfolio';
+import AdminForm from './form';
 
 import database from '../../database';
 

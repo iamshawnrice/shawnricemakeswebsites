@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import AdminPortfolioItem from '../admin-portfolio-item/AdminPortfolioItem';
+import AdminPortfolioItem from './portfolio-item';
 
 class AdminPortfolio extends Component {
   render() {
