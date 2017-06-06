@@ -1,0 +1,32 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #464541;
+  height: 70px;
+  display: flex;
+  align-items: baseline;
+  font-family: 'Ovo', serif;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.site-header h1 {
+  flex: 0 0 auto;
+  font-size: 5rem;
+}
+
+.site-header p {
+  font-size: 3rem;
+}
+
+.site-header a {
+  color: #edeae2;
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  color: #edeae2;
+  text-decoration: none;
+}
