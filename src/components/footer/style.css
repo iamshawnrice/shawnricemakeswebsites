@@ -1,0 +1,36 @@
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-family: 'Ovo', serif;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.footer-nav,
+.footer-social {
+  flex: 0 0 auto;
+  list-style: none;
+}
+
+.footer-nav li,
+.footer-social li {
+   display: inline-block;
+}
+
+.footer-nav li {
+  margin-right: 1em;
+}
+
+.footer-nav li:last-of-type {
+  margin-right: 0;
+}
+
+.footer-social li {
+  margin-right: .5em;
+  width: 36px;
+}
+
+.footer-social li:last-of-type {
+  margin-right: 0;
+}

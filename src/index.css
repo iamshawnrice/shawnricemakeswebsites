@@ -80,6 +80,15 @@ table {
 }
 
 /* Global Styles*/
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
 html {
   font-size: 10px;
 }
