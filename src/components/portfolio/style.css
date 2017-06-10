@@ -54,6 +54,6 @@
   right: 0;
   left: 0;
   z-index: 1;
-  opacity: .15;
+  opacity: .1;
   transform: translateZ(-1px);
 }
