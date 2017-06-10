@@ -5,6 +5,8 @@ import AdminForm from './form';
 
 import database from '../../database';
 
+import './style.css';
+
 class Admin extends Component {
   constructor() {
     super();
@@ -37,7 +39,7 @@ class Admin extends Component {
 
   render() {
     return (
-      <div>
+      <div id="admin">
         <h1>Admin</h1>
 
         <AdminForm addItem={this.addItem} />

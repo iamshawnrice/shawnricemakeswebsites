@@ -1,5 +1,7 @@
 import React from 'react';
 
+import utils from '../../utils';
+
 class PortfolioItem extends React.Component {
   renderTags() {
     if (this.props.item.hasOwnProperty('tags') && this.props.item.tags.length > 0) {
@@ -24,7 +26,7 @@ class PortfolioItem extends React.Component {
           <img src="./images/devices.svg" alt="devices" />
         </div>
         
-        <div className={'bg-box bg-' + this.props.index}></div>
+        <div className={'bg-box bg-' + utils.randomNumber(1, 25)}></div>
       </article>
     );
   }
