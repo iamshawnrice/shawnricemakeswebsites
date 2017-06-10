@@ -2,9 +2,14 @@
   display: flex;
   justify-content: space-between;
   font-size: 3rem;
-  font-family: 'Ovo', serif;
   padding: 2rem;
   align-items: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #464541;
+  z-index: 3;
 }
 
 .footer-nav,

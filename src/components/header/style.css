@@ -6,9 +6,9 @@
   background-color: #464541;
   display: flex;
   align-items: baseline;
-  font-family: 'Ovo', serif;
   justify-content: space-between;
   padding: 2rem;
+  z-index: 3;
 }
 
 .site-header h1 {

@@ -1,3 +1,56 @@
 .portfolio {
   padding-top: 90px;
+  padding-bottom: 82px;
+}
+
+.portfolio-item {
+  min-height: 30vh;
+  display: flex;
+  padding: 3.2rem 2.4rem;
+  position: relative;
+}
+
+.portfolio-item-header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-item-title {
+  font-size: 5rem;
+}
+
+.portfolio-item-tags {
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+  opacity: .7;
+}
+
+.portfolio-item-preview {
+  flex: 1 1 auto;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-item.even .portfolio-item-header {
+  order: 2
+}
+
+.portfolio-item.even .portfolio-item-preview {
+  order: 1;
+  text-align: left;
+}
+
+.bg-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .15;
 }
