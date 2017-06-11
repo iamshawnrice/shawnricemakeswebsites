@@ -24,7 +24,7 @@ class PortfolioItem extends React.Component {
   render() {
     return (
       <article className={this.getClasses()}>
-        <Link to={'/portfolio/' + this.props.item.id} >
+        <Link to={'/portfolio/' + this.props.item.id} className="portfolio-item-link">
           <header className="portfolio-item-header">
             <div className="portfolio-item-info">
               <h2 className="portfolio-item-title">{this.props.item.title}</h2>
@@ -40,7 +40,7 @@ class PortfolioItem extends React.Component {
 
         {this.isActive()}
         
-        <div className={'bg-box bg-' + utils.randomNumber(1, 25)}></div>
+        <div className={'bg-box bg-' + this.props.index}></div>
       </article>
     );
   }

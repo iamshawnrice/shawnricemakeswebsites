@@ -6,9 +6,17 @@
 .portfolio-item {
   min-height: 30vh;
   display: flex;
+  flex-direction: column;
   padding: 3.2rem 2.4rem;
   position: relative;
   border-bottom: 1px solid #edeae2;
+}
+
+.portfolio-item-link {
+  display: flex;
+  flex: 1 1 auto;
+  color: #edeae2;
+  text-decoration: none;
 }
 
 .portfolio-item-header {
@@ -41,6 +49,11 @@
   text-align: right;
   position: relative;
   z-index: 2;
+}
+
+.portfolio-item-details {
+  display: flex;
+  flex: 1 1 auto;
 }
 
 .portfolio-item.even .portfolio-item-info {
