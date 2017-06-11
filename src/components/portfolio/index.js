@@ -15,6 +15,10 @@ class Portfolio extends React.Component {
     });
   }
 
+  isActiveItem(key) {
+    return this.props.match.params.id === key;
+  }
+
   state = {
     items: {}
   }
@@ -25,7 +29,7 @@ class Portfolio extends React.Component {
         {
           Object
             .keys(this.state.items)
-            .map((key, index) => <PortfolioItem item={this.state.items[key]} index={index} key={key} children={this.props.children} />)
+            .map((key, index) => <PortfolioItem item={this.state.items[key]} index={index} key={key} active={this.isActiveItem(key)}/>)
         }
       </section>
     );

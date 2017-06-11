@@ -5,7 +5,6 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
 import Portfolio from './components/portfolio';
-import PortfolioItemDetail from './components/portfolio/portfolio-item-detail';
 
 class App extends React.Component {
   render() {

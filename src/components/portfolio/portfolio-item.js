@@ -1,6 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import utils from '../../utils';
+import PortfolioItemDetail from './portfolio-item-detail';
 
 class PortfolioItem extends React.Component {
   renderTags() {
@@ -13,18 +15,30 @@ class PortfolioItem extends React.Component {
     return this.props.index % 2 === 0 ? 'portfolio-item even' : 'portfolio-item odd';
   }
 
+  isActive() {
+    if (this.props.active) {
+      return (<PortfolioItemDetail />);
+    }
+  }
+
   render() {
     return (
       <article className={this.getClasses()}>
-        <header className="portfolio-item-header">
-          <h2 className="portfolio-item-title">{this.props.item.title}</h2>
+        <Link to={'/portfolio/' + this.props.item.id} >
+          <header className="portfolio-item-header">
+            <div className="portfolio-item-info">
+              <h2 className="portfolio-item-title">{this.props.item.title}</h2>
 
-          {this.renderTags()}
-        </header>
+              {this.renderTags()}
+            </div>
 
-        <div className="portfolio-item-preview">
-          <img src="./images/devices.svg" alt="devices" />
-        </div>
+            <div className="portfolio-item-preview">
+              <img src="/images/devices.svg" alt="devices" />
+            </div>
+          </header>
+        </Link>
+
+        {this.isActive()}
         
         <div className={'bg-box bg-' + utils.randomNumber(1, 25)}></div>
       </article>

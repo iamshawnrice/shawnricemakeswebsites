@@ -9,3 +9,5 @@ class PortfolioItemDetail extends React.Component {
     );
   }
 }
+
+export default PortfolioItemDetail;
