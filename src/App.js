@@ -5,6 +5,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
 import Portfolio from './components/portfolio';
+import PortfolioItemDetail from './components/portfolio/portfolio-item-detail';
 
 class App extends React.Component {
   render() {
@@ -13,8 +14,10 @@ class App extends React.Component {
         <Router>
           <div>
             <Header />
+
             <Route path="/admin" component={Admin} />
-            <Route exact path="/" component={Portfolio} />
+            <Route path="/portfolio/:id?" component={Portfolio} />
+
             <Footer />
           </div>
         </Router>

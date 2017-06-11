@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
         {
           Object
             .keys(this.state.items)
-            .map((key, index) => <PortfolioItem item={this.state.items[key]} index={index} key={key}/>)
+            .map((key, index) => <PortfolioItem item={this.state.items[key]} index={index} key={key} children={this.props.children} />)
         }
       </section>
     );

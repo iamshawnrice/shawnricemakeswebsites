@@ -8,8 +8,7 @@
   display: flex;
   padding: 3.2rem 2.4rem;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
+  border-bottom: 1px solid #edeae2;
 }
 
 .portfolio-item-header {
@@ -55,5 +54,5 @@
   left: 0;
   z-index: 1;
   opacity: .1;
-  transform: translateZ(-1px);
+  background-attachment: fixed;
 }
