@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import utils from '../../utils';
+import Devices from './devices';
 import PortfolioItemDetail from './portfolio-item-detail';
 
 class PortfolioItem extends React.Component {
@@ -33,7 +33,7 @@ class PortfolioItem extends React.Component {
             </div>
 
             <div className="portfolio-item-preview">
-              <img src="/images/devices.svg" alt="devices" />
+              <Devices />
             </div>
           </header>
         </Link>
