@@ -75,3 +75,32 @@
   opacity: .1;
   background-attachment: fixed;
 }
+
+.portfolio-item.even.is-active .portfolio-item-header,
+.portfolio-item.odd.is-active .portfolio-item-header{
+  flex-direction: column;
+  text-align: center;
+}
+
+.portfolio-item.even.is-active .portfolio-item-preview,
+.portfolio-item.odd.is-active .portfolio-item-preview {
+  text-align: center;
+  order: 1;
+}
+
+.portfolio-item.even.is-active .portfolio-item-info,
+.portfolio-item.odd.is-active .portfolio-item-info {
+  order: 2;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.portfolio-item-details {
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+.portfolio-item-details p {
+  font-size: 2rem;
+  line-height: 1.5;
+}

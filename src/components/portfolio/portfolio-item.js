@@ -12,12 +12,18 @@ class PortfolioItem extends React.Component {
   }
 
   getClasses() {
-    return this.props.index % 2 === 0 ? 'portfolio-item even' : 'portfolio-item odd';
+    let classes = this.props.index % 2 === 0 ? 'portfolio-item even' : 'portfolio-item odd';
+
+    if (this.props.active) {
+      classes += ' is-active';
+    }
+
+    return classes;
   }
 
-  isActive() {
+  showDetail() {
     if (this.props.active) {
-      return (<PortfolioItemDetail />);
+      return (<PortfolioItemDetail itemdetails={this.props.item} />);
     }
   }
 
@@ -38,8 +44,8 @@ class PortfolioItem extends React.Component {
           </header>
         </Link>
 
-        {this.isActive()}
-        
+        {this.showDetail()}
+
         <div className={'bg-box bg-' + this.props.index}></div>
       </article>
     );
