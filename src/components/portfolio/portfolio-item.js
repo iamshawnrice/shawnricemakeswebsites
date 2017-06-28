@@ -2,12 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Devices from './devices';
+import Tags from './portfolio-item-tags';
 import PortfolioItemDetail from './portfolio-item-detail';
 
 class PortfolioItem extends React.Component {
   renderTags() {
     if (this.props.item.hasOwnProperty('tags') && this.props.item.tags.length > 0) {
-      return (<p className="portfolio-item-tags">{this.props.item.tags}</p>);
+      return (<Tags tags={this.props.item.tags} />);
     }
   }
 
