@@ -48,11 +48,6 @@
   z-index: 2;
 }
 
-.portfolio-item-details {
-  display: flex;
-  flex: 1 1 auto;
-}
-
 .portfolio-item.even .portfolio-item-info {
   order: 2
 }
@@ -90,14 +85,4 @@
   order: 2;
   text-align: center;
   margin-top: 4em;
-}
-
-.portfolio-item-details {
-  max-width: 600px;
-  margin: 4rem auto;
-}
-
-.portfolio-item-details p {
-  font-size: 2rem;
-  line-height: 1.5;
 }
