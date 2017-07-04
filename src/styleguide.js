@@ -1,9 +1,9 @@
 const styleGuide = {
     white: '#edeae2',
-    black: '$464541',
+    black: '#464541',
 
-    muli: 'Muli, serif',
-    ovo: 'Ovo, sans-serif'
+    sans: 'Muli, serif',
+    serif: 'Ovo, sans-serif'
 }
 
 export default styleGuide;

@@ -5,7 +5,7 @@ class Tags extends React.Component {
   render() {
     const Tags = styled.p`
       font-size: 2rem;
-      font-family: 'Muli', sans-serif;
+      font-family: ${props => props.theme.sans};
       opacity: .7;
     `;
 
