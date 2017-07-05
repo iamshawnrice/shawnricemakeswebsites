@@ -15,7 +15,7 @@ class App extends React.Component {
             <Header />
 
             <Route path="/admin" component={Admin} />
-            <Route path="/portfolio/:id?" component={PortfolioIndex} />
+            <Route path="/portfolio/" component={PortfolioIndex} />
 
             <Footer />
           </div>
