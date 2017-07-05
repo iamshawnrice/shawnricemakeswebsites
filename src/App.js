@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
-import Portfolio from './components/portfolio';
+import PortfolioIndex from './components/portfolio';
 
 class App extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class App extends React.Component {
             <Header />
 
             <Route path="/admin" component={Admin} />
-            <Route path="/portfolio/:id?" component={Portfolio} />
+            <Route path="/portfolio/:id?" component={PortfolioIndex} />
 
             <Footer />
           </div>

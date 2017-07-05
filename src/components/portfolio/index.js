@@ -1,13 +1,17 @@
 import React from 'react';
 
 import PortfolioItem from './portfolio-item';
-
 import database from '../../database';
+import styled from 'styled-components';
 
-import './style.css';
 import './backgrounds.css';
 
-class Portfolio extends React.Component {
+const Portfolio = styled.section`
+  padding-top: 90px;
+  padding-bottom: 82px;
+`;
+
+class PortfolioIndex extends React.Component {
   componentWillMount() {
     this.ref = database.syncState('portfolio/items', {
       context: this,
@@ -25,15 +29,15 @@ class Portfolio extends React.Component {
 
   render() {
     return (
-      <section className="portfolio">
+      <Portfolio>
         {
           Object
             .keys(this.state.items)
             .map((key, index) => <PortfolioItem item={this.state.items[key]} index={index} key={key} active={this.isActiveItem(key)}/>)
         }
-      </section>
+      </Portfolio>
     );
   }
 }
 
-export default Portfolio;
+export default PortfolioIndex;
