@@ -4,8 +4,6 @@ import PortfolioItem from './portfolio-item';
 import database from '../../database';
 import styled from 'styled-components';
 
-import './backgrounds.css';
-
 const Portfolio = styled.section`
   padding-top: 90px;
   padding-bottom: 82px;

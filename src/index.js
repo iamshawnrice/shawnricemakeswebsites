@@ -7,7 +7,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-import styleGuide from './styleguide';
+import global from './styleguides/global';
 
-ReactDOM.render(<ThemeProvider theme={styleGuide}><App /></ThemeProvider>, document.getElementById('root'));
+ReactDOM.render(<ThemeProvider theme={global}><App /></ThemeProvider>, document.getElementById('root'));
 registerServiceWorker();
