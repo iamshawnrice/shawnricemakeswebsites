@@ -1,17 +1,59 @@
 import React from 'react';
 import SVGInline from 'react-svg-inline';
+import styled from 'styled-components';
 
-import './style.css';
+const SiteFooter = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  padding: 2rem;
+  align-items: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: ${props => props.theme.black};
+  z-index: 3;
+`;
+
+const SiteFooterNav = styled.ul`
+  flex: 0 0 auto;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: 1em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
+
+const SiteFooterSocial = styled.ul`
+  flex: 0 0 auto;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+    width: 36px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
 
 const Footer = () => {
   return (
-    <footer className="site-footer">
-      <ul className="footer-nav">
+    <SiteFooter>
+      <SiteFooterNav>
         <li>about</li>
         <li>contact</li>
-      </ul>
+      </SiteFooterNav>
 
-      <ul className="footer-social">
+      <SiteFooterSocial>
         <li>
           <a href="https://twitter.com/iamshawnrice">
             <SVGInline svg={
@@ -35,8 +77,8 @@ const Footer = () => {
             } />
           </a>
         </li>
-      </ul>
-    </footer>
+      </SiteFooterSocial>
+    </SiteFooter>
   );
 };
 
