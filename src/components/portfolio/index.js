@@ -1,24 +1,20 @@
 import React from 'react';
 
-import PortfolioItem from './portfolio-item';
-import styled from 'styled-components';
+import Portfolio from './portfolio';
+import PortfolioItem from './portfolioitem';
 
-const Portfolio = styled.section`
-  padding-top: 90px;
-  padding-bottom: 82px;
-`;
+const PortfolioPage = () => <Portfolio />;
+const PortfolioItemPage = () => <PortfolioItem />;
 
 class PortfolioIndex extends React.Component {
+  constructor(props) {
+    super();
+
+    this.pageContent = props.match.params.hasOwnProperty('id') ? PortfolioItemPage : PortfolioPage
+  }
+
   render() {
-    return (
-      <Portfolio>
-        {
-          Object
-            .keys(this.props.items)
-            .map((key, index) => <PortfolioItem item={this.props.items[key]} index={index} key={key} />)
-        }
-      </Portfolio>
-    );
+    return this.pageContent;
   }
 }
 

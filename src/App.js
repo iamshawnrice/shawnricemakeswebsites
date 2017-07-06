@@ -5,7 +5,7 @@ import database from './database';
 import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
-import PortfolioIndex from './components/portfolio';
+import Portfolio from './components/portfolio';
 
 class App extends React.Component {
   componentWillMount() {
@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   renderPortfolio() {
-    return <PortfolioIndex items={this.state.items} />
+    return <Portfolio items={this.state.items} />
   }
 
   render() {
@@ -31,7 +31,7 @@ class App extends React.Component {
             <Header />
 
             <Route path="/admin" component={Admin} />
-            <Route path="/portfolio/" render={this.renderPortfolio.bind(this)} />
+            <Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
 
             <Footer />
           </div>
