@@ -10,14 +10,14 @@ class PortfolioItem extends React.Component {
   constructor(props) {
     super();
 
-    this.id = props.match.params.id;
+    this.itemData = props.item;
   }
 
   render() {
     return(
       <PortfolioItemSection>
         <h1>Hello fron the PortfolioItem component</h1>
-        <p>My id is {this.id}</p>
+        <p>My id is {this.itemData.id}</p>
       </PortfolioItemSection>
     );
   }

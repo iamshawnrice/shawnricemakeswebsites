@@ -5,7 +5,8 @@ import database from './database';
 import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
-import Portfolio from './components/portfolio';
+import Portfolio from './components/portfolio/portfolio';
+import PortfolioItem from './components/portfolio/portfolioitem';
 
 class App extends React.Component {
   componentWillMount() {
@@ -23,6 +24,10 @@ class App extends React.Component {
     return <Portfolio items={this.state.items} />
   }
 
+  renderPortfolioItem(args) {
+    return <PortfolioItem item={this.state.items[args.match.params.id]} />
+  }
+
   render() {
     return (
       <div>
@@ -32,6 +37,7 @@ class App extends React.Component {
 
             <Route path="/admin" component={Admin} />
             <Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
+            <Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
 
             <Footer />
           </div>
