@@ -8,17 +8,40 @@ const PortfolioItemSection = styled.section`
 
 class PortfolioItem extends React.Component {
   constructor(props) {
-    super();
+    super(props);
 
     this.itemData = props.item;
   }
 
-  render() {
-    return(
+  componentWillReceiveProps(props) {
+    this.itemData = props.item;
+  }
+
+  renderPortfolioItem() {
+    return (
       <PortfolioItemSection>
         <h1>Hello fron the PortfolioItem component</h1>
+
         <p>My id is {this.itemData.id}</p>
       </PortfolioItemSection>
+    );
+  }
+
+  renderLoader() {
+    return <p>Loading...</p>;
+  }
+
+  render() {
+    let hasItemData = this.itemData;
+
+    return (
+      <div>
+        {hasItemData ? (
+          this.renderPortfolioItem()
+        ) : (
+          this.renderLoader()
+        )}
+      </div>
     );
   }
 }
