@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import PortfolioItemHeader from './header';
+
 const PortfolioItemSection = styled.section`
   padding-top: 90px;
   padding-bottom: 82px;
@@ -20,9 +22,7 @@ class PortfolioItem extends React.Component {
   renderPortfolioItem() {
     return (
       <PortfolioItemSection>
-        <h1>Hello fron the PortfolioItem component</h1>
-
-        <p>My id is {this.itemData.id}</p>
+        <PortfolioItemHeader itemdata={this.itemData} />
       </PortfolioItemSection>
     );
   }
