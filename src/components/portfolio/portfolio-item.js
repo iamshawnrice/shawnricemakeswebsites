@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 
 import Devices from './devices';
@@ -84,7 +83,7 @@ const BgBox = styled.div`
   z-index: 1;
   opacity: .1;
   background-attachment: fixed;
-  background-image: url("${props => props.theme[props.background]}");
+  background-image: url("${props => backgrounds[props.background]}");
 `;
 
 class PortfolioItem extends React.Component {
@@ -129,9 +128,7 @@ class PortfolioItem extends React.Component {
 
         {this.showDetail()}
 
-        <ThemeProvider theme={backgrounds}>
-          <BgBox background={'bg' + this.props.index}></BgBox>
-        </ThemeProvider>
+        <BgBox background={this.props.item.background}></BgBox>
       </PortfolioItemArticle>
     );
   }

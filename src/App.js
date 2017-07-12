@@ -1,7 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import database from './database';
+
 import Header from './components/header';
 import Footer from './components/footer';
 import Admin from './components/admin';
@@ -21,11 +22,11 @@ class App extends React.Component {
   }
 
   renderPortfolio() {
-    return <Portfolio items={this.state.items} />
+    return <Portfolio items={this.state.items} />;
   }
 
   renderPortfolioItem(args) {
-    return <PortfolioItem item={this.state.items[args.match.params.id]} />
+    return <PortfolioItem item={this.state.items[args.match.params.id]} />;
   }
 
   render() {
