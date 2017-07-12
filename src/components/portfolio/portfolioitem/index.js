@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import PortfolioItemHeader from './header';
+import PortfolioItemDescription from './description';
 
 const PortfolioItemSection = styled.section`
   padding-top: 90px;
@@ -23,6 +24,7 @@ class PortfolioItem extends React.Component {
     return (
       <PortfolioItemSection>
         <PortfolioItemHeader itemdata={this.itemData} />
+        <PortfolioItemDescription />
       </PortfolioItemSection>
     );
   }

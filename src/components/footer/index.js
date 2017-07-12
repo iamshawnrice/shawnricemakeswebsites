@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import SVGInline from 'react-svg-inline';
 import styled from 'styled-components';
 
@@ -28,6 +29,20 @@ const SiteFooterNav = styled.ul`
       margin-right: 0;
     }
   }
+
+  a {
+    text-decoration: none;
+    transition: color .3s linear;
+    color: ${props => props.theme.white};
+
+    &:hover {
+      color: ${props => props.theme.blue}
+    }
+
+    &.active {
+      color: ${props => props.theme.orange}
+    }
+  }
 `;
 
 const SiteFooterSocial = styled.ul`
@@ -49,6 +64,7 @@ const Footer = () => {
   return (
     <SiteFooter>
       <SiteFooterNav>
+        <li><NavLink to="/portfolio">portfolio</NavLink></li>
         <li>about</li>
         <li>contact</li>
       </SiteFooterNav>
