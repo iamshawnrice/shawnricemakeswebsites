@@ -12,6 +12,7 @@ const PortfolioItemSection = styled.section`
   position: relative;
 
   > * {
+    position: relative;
     z-index: 2;
   }
 `;
