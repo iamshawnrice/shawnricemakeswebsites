@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import PortfolioItemHeader from './header';
 import PortfolioItemDescription from './description';
+import PortfolioItemImages from './images';
 
 import backgrounds from '../../../styleguides/backgrounds';
 
@@ -46,6 +47,7 @@ class PortfolioItem extends React.Component {
         <BGBox background={this.itemData.background} />
         <PortfolioItemHeader itemdata={this.itemData} />
         <PortfolioItemDescription />
+        <PortfolioItemImages />
       </PortfolioItemSection>
     );
   }
