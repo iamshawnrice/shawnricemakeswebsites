@@ -1,21 +1,47 @@
 import React from 'react';
 
-import { fbApp } from '../../../database';
+import { fbStorage } from '../../../database';
 
 class PortfolioItemImages extends React.Component {
     constructor(props) {
         super(props);
 
-        this.firebaseRef = fbApp;
+        this.fbStorageRef = fbStorage.ref('/portfolio/sample-item-1/');
+
+        this.state = {
+            hasImages: false
+        }
     }
 
-    prepImages() {
-        // TODO: work out how to grab all images in a given folder and render them out
-        this.firebaseRef.storage()
+    renderImage() {
+        return <img src={this.imageURL} alt="heather" />
     }
 
     render() {
-        return(<h1>hello from the PortfolioItemImages component</h1>);
+        const self = this;
+
+        const hasImageData = this.state.hasImages,
+              imageURL = this.imageURL;
+
+        this.fbStorageRef.child('iamheatherrice.com.jpg').getDownloadURL().then((response) => {
+            const prevState = self.state;
+
+            self.setState((prevState, props) => {
+                return {
+                    hasImages: true
+                }
+            });
+
+            self.imageURL = response;
+        });
+
+        return(
+            <div>
+                { hasImageData ? (
+                    this.renderImage()
+                ) : (<p>No images</p>) }
+            </div>
+        );
     }
 }
 

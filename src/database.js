@@ -12,8 +12,10 @@ const config = {
     messagingSenderId: "655462170572"
 }
 
-export const fbApp = firebase.initializeApp(config);
+const fbApp = firebase.initializeApp(config);
 const db = fbApp.database();
 const database = Rebase.createClass(db);
+
+export const fbStorage = fbApp.storage();
 
 export default database;
