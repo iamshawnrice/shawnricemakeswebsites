@@ -1,24 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import database from './database';
+import data from './data';
 
 import Header from './components/header';
 import Footer from './components/footer';
-import Admin from './components/admin';
 import Portfolio from './components/portfolio/portfolio';
 import PortfolioItem from './components/portfolio/portfolioitem';
 
 class App extends React.Component {
-  componentWillMount() {
-    this.ref = database.syncState('portfolio/items', {
-      context: this,
-      state: 'items'
-    });
-  }
-
   state = {
-    items: {}
+    items: data.portfolio.items
   }
 
   renderPortfolio() {
@@ -36,7 +28,6 @@ class App extends React.Component {
           <div>
             <Header />
 
-            <Route path="/admin" component={Admin} />
             <Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
             <Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
 
