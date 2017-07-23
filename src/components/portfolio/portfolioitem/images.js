@@ -1,17 +1,22 @@
 import React from 'react';
+import Slider from 'react-slick'
 
 const PortfolioItemImages = props => {
     const images = props.images;
 
     if (images.length > 0) {
         return(
-            <div className="images">
+            <Slider>
                 {
                     Object.keys(images).map((image, i) => {
-                        return <img src={images[image]} key={i} alt="" />
+                        return (
+                            <div>
+                                <img src={images[image]} key={i} alt="" />
+                            </div>
+                        );
                     })
                 }
-            </div>
+            </Slider>
         );
     }
 }
