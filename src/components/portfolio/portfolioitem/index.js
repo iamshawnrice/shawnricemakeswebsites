@@ -42,12 +42,14 @@ class PortfolioItem extends React.Component {
   }
 
   renderPortfolioItem() {
+    const item = this.itemData;
+
     return (
       <PortfolioItemSection>
-        <BGBox background={this.itemData.background} />
-        <PortfolioItemHeader itemdata={this.itemData} />
+        <BGBox background={item.background} />
+        <PortfolioItemHeader itemdata={item} />
         <PortfolioItemDescription />
-        <PortfolioItemImages />
+        <PortfolioItemImages images={item.images} />
       </PortfolioItemSection>
     );
   }
