@@ -13,12 +13,9 @@ const ControlPrev = styled.a`
 `;
 
 class SliderControlPrev extends React.Component {
-	prevSlide() {
-        console.log('Prev Slide');
-	}
-	
+
     render() {
-        return <ControlPrev onClick={() => this.prevSlide()}>Prev</ControlPrev>
+        return <ControlPrev>Prev</ControlPrev>
     }
 }
 

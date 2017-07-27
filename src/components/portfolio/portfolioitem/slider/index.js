@@ -11,12 +11,19 @@ class Slider extends React.Component {
         this.state = {
             imageIndex: 0
         }
+
+        this.controlmethods = {
+            decreaseImageIndex: this.decreaseImageIndex,
+            increaseImageIndex: this.increaseImageIndex
+        }
     }
 
     decreaseImageIndex() {
         if (this.state.imageIndex > 0) {
             this.setState((prevState) => {
-                const newindex = prevState.imageIndex -=1; 
+                const newindex = prevState.imageIndex -=1;
+
+                console.log('Prev Slide');
 
                 return { imageIndex: newindex };
             });
@@ -28,13 +35,21 @@ class Slider extends React.Component {
             this.setState((prevState) => {
                 const newindex = prevState.imageIndex += 1;
 
+                console.log('Next Slide');
+
                 return { imageIndex: newindex };
             });
         }
     }
 
     render() {
-        return <PortfolioItemImages images={this.imageData} activeimage={this.state.imageIndex} />
+        return (
+            <PortfolioItemImages 
+                images={this.imageData} 
+                activeimage={this.state.imageIndex} 
+                controlmethods={this.controlmethods} 
+            />
+        );
     }
 }
 

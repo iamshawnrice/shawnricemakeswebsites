@@ -13,12 +13,8 @@ const ControlNext = styled.a`
 `;
 
 class SliderControlNext extends React.Component {
-    nextSlide() {
-        console.log('Next Slide');
-    }
-
     render() {
-        return <ControlNext onClick={() => this.nextSlide()}>Next</ControlNext>
+        return <ControlNext>Next</ControlNext>
     }
 }
 
