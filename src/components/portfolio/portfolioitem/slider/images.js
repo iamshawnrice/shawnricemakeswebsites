@@ -18,19 +18,22 @@ const Slider = styled.div`
 
 const SliderCarriage = styled.div`
 	white-space: nowrap;
-	width: ${props => props.imagecount * 1280}px;
+	position: relative;
+	width: ${props => props.imagecount * 720}px;
+	left: -${props => props.activeimage * 720}px;
 `;
 
 class PortfolioItemImages extends React.Component {
 	render() {
 		const images = this.props.images;
+		const activeimage = this.props.activeimage;
 
 		return(
 			<Slider>
 				<SliderControlPrev />
 
 				<SliderContainer>
-					<SliderCarriage imagecount={images.length} >
+					<SliderCarriage imagecount={images.length} activeimage={activeimage}>
 						{
 							images.map((image, i) => {
 								return ( <Image imagedata={image} index={i} key={i} /> );

@@ -12,6 +12,27 @@ class Slider extends React.Component {
             imageIndex: 0
         }
     }
+
+    decreaseImageIndex() {
+        if (this.state.imageIndex > 0) {
+            this.setState((prevState) => {
+                const newindex = prevState.imageIndex -=1; 
+
+                return { imageIndex: newindex };
+            });
+        }
+    }
+
+    increaseImageIndex() {
+        if (this.state.imageIndex < this.imageData.length - 1) {
+            this.setState((prevState) => {
+                const newindex = prevState.imageIndex += 1;
+
+                return { imageIndex: newindex };
+            });
+        }
+    }
+
     render() {
         return <PortfolioItemImages images={this.imageData} activeimage={this.state.imageIndex} />
     }
