@@ -33,7 +33,7 @@ class PortfolioItemImages extends React.Component {
 
 		return(
 			<Slider>
-				<SliderControlPrev onClick={() => {prevSlide()}}/>
+				<SliderControlPrev clickcallback={prevSlide}/>
 
 				<SliderContainer>
 					<SliderCarriage imagecount={images.length} activeimage={activeimage}>
@@ -45,7 +45,7 @@ class PortfolioItemImages extends React.Component {
 					</SliderCarriage>
 				</SliderContainer>
 
-				<SliderControlNext onClick={() => {nextSlide()}}/>
+				<SliderControlNext clickcallback={nextSlide}/>
 			</Slider>
 		);
 	}

@@ -10,13 +10,16 @@ const ControlPrev = styled.a`
 	text-align: right;
 	font-size: 2.4rem;
 	cursor: pointer;
+
+	&::selection {
+		background-color: transparent;
+	}
 `;
 
-class SliderControlPrev extends React.Component {
+const SliderControlPrev = (props) => {
+	const prevSlide = props.clickcallback;
 
-    render() {
-        return <ControlPrev>Prev</ControlPrev>
-    }
+    return <ControlPrev onClick={() => { prevSlide() }}>Prev</ControlPrev>;
 }
 
 export default SliderControlPrev;

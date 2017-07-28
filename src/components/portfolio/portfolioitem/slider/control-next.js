@@ -9,13 +9,17 @@ const ControlNext = styled.a`
 	color: ${props => props.theme.white}
 	text-align: right;
     font-size: 2.4rem;
-    cursor: pointer;
+	cursor: pointer;
+	
+	&::selection {
+		background-color: transparent;
+	}
 `;
 
-class SliderControlNext extends React.Component {
-    render() {
-        return <ControlNext>Next</ControlNext>
-    }
+const SliderControlNext = (props) => {	
+	const nextSlide = props.clickcallback;
+
+    return <ControlNext onClick={() => { nextSlide() }}>Next</ControlNext>;
 }
 
 export default SliderControlNext;
