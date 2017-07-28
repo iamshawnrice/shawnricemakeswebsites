@@ -5,7 +5,7 @@ const ControlNext = styled.a`
 	position: absolute;
 	transform: translateY(-50%);
 	top: 50%;
-	right: -6rem;
+	right: -1rem;
 	color: ${props => props.theme.white}
 	text-align: right;
     font-size: 2.4rem;
@@ -19,7 +19,7 @@ const ControlNext = styled.a`
 const SliderControlNext = (props) => {	
 	const nextSlide = props.clickcallback;
 
-    return <ControlNext onClick={() => { nextSlide() }}>Next</ControlNext>;
+  return <ControlNext onClick={() => { nextSlide() }}>Next</ControlNext>;
 }
 
 export default SliderControlNext;

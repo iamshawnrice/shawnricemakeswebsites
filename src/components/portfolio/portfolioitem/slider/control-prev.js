@@ -5,7 +5,7 @@ const ControlPrev = styled.a`
 	position: absolute;
 	transform: translateY(-50%);
 	top: 50%;
-	left: -6rem;
+	left: -1rem;
 	color: ${props => props.theme.white}
 	text-align: right;
 	font-size: 2.4rem;
@@ -19,7 +19,7 @@ const ControlPrev = styled.a`
 const SliderControlPrev = (props) => {
 	const prevSlide = props.clickcallback;
 
-    return <ControlPrev onClick={() => { prevSlide() }}>Prev</ControlPrev>;
+  return <ControlPrev onClick={() => { prevSlide() }}>Prev</ControlPrev>;
 }
 
 export default SliderControlPrev;
