@@ -6,7 +6,7 @@ class Slider extends React.Component {
     constructor(props) {
         super(props);
 
-        this.imageData = props.images;
+        this.imageData = props.images.full;
 
         this.state = {
             imageIndex: 0
