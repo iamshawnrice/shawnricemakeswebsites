@@ -12,6 +12,12 @@ const data = {
 					  {"file": "sample-item-1/example-3.jpg", "alt": "alt text 3"},
 					  {"file": "sample-item-1/example-4.jpg", "alt": "alt text 4"}
           ],
+          "medium": [
+            {"file": "sample-item-1/medium-1.jpg", "alt": "alt text 1"},
+					  {"file": "sample-item-1/medium-2.jpg", "alt": "alt text 2"},
+					  {"file": "sample-item-1/medium-3.jpg", "alt": "alt text 3"},
+					  {"file": "sample-item-1/medium-4.jpg", "alt": "alt text 4"}
+          ],
           "small": [
             {"file": "sample-item-1/small-1.jpg", "alt": "alt text 1"},
 					  {"file": "sample-item-1/small-2.jpg", "alt": "alt text 2"},
