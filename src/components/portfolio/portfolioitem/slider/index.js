@@ -50,6 +50,7 @@ class Slider extends React.Component {
 			return (
 				<PortfolioItemImages 
 					fullimages={this.imageData.full} 
+					mediumimages={this.imageData.medium}
 					smallimages={this.imageData.small}
 					activeimage={this.state.imageIndex} 
 					controlmethods={controlMethods} 

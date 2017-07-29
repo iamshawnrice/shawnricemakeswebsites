@@ -8,13 +8,13 @@ import SliderControlNext from './control-next';
 
 const Sliders = styled.div`
 	position: relative;
-	max-width: 1024px;
+	max-width: 1920px;
 	margin: 0 auto 4rem;
 `;
 
 const SliderContainerFull = styled.div`
 	overflow: hidden;
-	width: 720px;
+	width: 1440px;
 	margin: 0 auto;
 	position: relative;
 `;
@@ -22,18 +22,27 @@ const SliderContainerFull = styled.div`
 const SliderCarriageFull = styled.div`
 	white-space: nowrap;
 	position: relative;
-	width: ${props => props.imagecount * 720}px;
-	left: -${props => props.activeimage * 720}px;
+	width: ${props => props.imagecount * 1440}px;
+	left: -${props => props.activeimage * 1440}px;
+`;
+
+const SliderContainerMedium = styled.div`
+	overflow: hidden;
+	width: 768px;
+	margin: 3rem auto 0;
+`;
+
+const SliderCarriageMedium = styled.div`
+	white-space: nowrap;
+	position: relative;
+	width: ${props => props.imagecount * 768}px;
+	left: -${props => props.activeimage * 768}px;
 `;
 
 const SliderContainerSmall = styled.div`
 	overflow: hidden;
 	width: 375px;
 	margin: 3rem auto 0;
-	transform: scale(.5);
-	position: absolute;
-	top: -70px;
-	left: 0;
 `;
 
 const SliderCarriageSmall = styled.div`
@@ -46,6 +55,7 @@ const SliderCarriageSmall = styled.div`
 class PortfolioItemImages extends React.Component {
 	render() {
 		const fullImages = this.props.fullimages;
+		const mediumImages = this.props.mediumimages;
 		const smallImages = this.props.smallimages;
 		const activeImage = this.props.activeimage;
 
@@ -65,6 +75,16 @@ class PortfolioItemImages extends React.Component {
 						}
 					</SliderCarriageFull>
 				</SliderContainerFull>
+
+				<SliderContainerMedium>
+					<SliderCarriageMedium imagecount={smallImages.length} activeimage={activeImage}>
+						{
+							mediumImages.map((image, i) => {
+								return ( <Image imagedata={image} index={i} key={i} /> );
+							})
+						}
+					</SliderCarriageMedium>
+				</SliderContainerMedium>
 
 				<SliderContainerSmall>
 					<SliderCarriageSmall imagecount={smallImages.length} activeimage={activeImage}>
