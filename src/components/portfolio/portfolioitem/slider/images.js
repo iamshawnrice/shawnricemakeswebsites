@@ -1,55 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Image from './image';
 import SliderControlPrev from './control-prev';
 import SliderControlNext from './control-next';
+
+import Slider from './slider';
 
 
 const Sliders = styled.div`
 	position: relative;
 	max-width: 1920px;
 	margin: 0 auto 4rem;
-`;
-
-const SliderContainerFull = styled.div`
-	overflow: hidden;
-	width: 1440px;
-	margin: 0 auto;
-	position: relative;
-`;
-
-const SliderCarriageFull = styled.div`
-	white-space: nowrap;
-	position: relative;
-	width: ${props => props.imagecount * 1440}px;
-	left: -${props => props.activeimage * 1440}px;
-`;
-
-const SliderContainerMedium = styled.div`
-	overflow: hidden;
-	width: 768px;
-	margin: 3rem auto 0;
-`;
-
-const SliderCarriageMedium = styled.div`
-	white-space: nowrap;
-	position: relative;
-	width: ${props => props.imagecount * 768}px;
-	left: -${props => props.activeimage * 768}px;
-`;
-
-const SliderContainerSmall = styled.div`
-	overflow: hidden;
-	width: 375px;
-	margin: 3rem auto 0;
-`;
-
-const SliderCarriageSmall = styled.div`
-	white-space: nowrap;
-	position: relative;
-	width: ${props => props.imagecount * 375}px;
-	left: -${props => props.activeimage * 375}px;
 `;
 
 class PortfolioItemImages extends React.Component {
@@ -66,35 +27,26 @@ class PortfolioItemImages extends React.Component {
 			<Sliders>
 				<SliderControlPrev clickcallback={prevSlide}/>
 
-				<SliderContainerFull>
-					<SliderCarriageFull imagecount={fullImages.length} activeimage={activeImage}>
-						{
-							fullImages.map((image, i) => {
-								return ( <Image imagedata={image} index={i} key={i} /> );
-							})
-						}
-					</SliderCarriageFull>
-				</SliderContainerFull>
+				<Slider
+					images={fullImages}
+					imagecount={fullImages.length}
+					activeimage={activeImage}
+					maxwidth={1440}
+				/>
 
-				<SliderContainerMedium>
-					<SliderCarriageMedium imagecount={smallImages.length} activeimage={activeImage}>
-						{
-							mediumImages.map((image, i) => {
-								return ( <Image imagedata={image} index={i} key={i} /> );
-							})
-						}
-					</SliderCarriageMedium>
-				</SliderContainerMedium>
+				<Slider
+					images={mediumImages}
+					imagecount={mediumImages.length}
+					activeimage={activeImage}
+					maxwidth={768}
+				/>
 
-				<SliderContainerSmall>
-					<SliderCarriageSmall imagecount={smallImages.length} activeimage={activeImage}>
-						{
-							smallImages.map((image, i) => {
-								return ( <Image imagedata={image} index={i} key={i} /> );
-							})
-						}
-					</SliderCarriageSmall>
-				</SliderContainerSmall>
+				<Slider
+					images={smallImages}
+					imagecount={smallImages.length}
+					activeimage={activeImage}
+					maxwidth={375}
+				/>
 
 				<SliderControlNext clickcallback={nextSlide}/>
 			</Sliders>
