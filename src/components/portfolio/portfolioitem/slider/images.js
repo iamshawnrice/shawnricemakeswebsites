@@ -9,8 +9,24 @@ import Slider from './slider';
 
 const Sliders = styled.div`
 	position: relative;
-	max-width: 1920px;
+	max-width: 1440px;
 	margin: 0 auto 4rem;
+
+	@media (min-width: 1500px) {
+		width: 1000px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1499px) {
+		width: 700px;
+	}
+
+	@media (min-width: 480px) and (max-width: 767px) {
+		width: 400px;
+	}
+
+	@media (max-width: 479px) {
+		width: 300px;
+	}
 `;
 
 const PortfolioItemImages = props => {

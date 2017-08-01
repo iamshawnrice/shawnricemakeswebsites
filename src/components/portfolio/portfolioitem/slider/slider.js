@@ -57,6 +57,7 @@ const SliderContainer = styled.div`
 const SliderCarriage = styled.div`
 	white-space: nowrap;
 	position: relative;
+	transition: .3s left ease-out;
 	width: ${props => setWidth(props.imagecount)};
 	left: ${props => setPosition(props.activeimage)};
 `;
