@@ -8,70 +8,76 @@ import Slider from './slider';
 import backgrounds from '../../../styleguides/backgrounds';
 
 const PortfolioItemSection = styled.section`
-  padding-top: 90px;
-  padding-bottom: 82px;
-  position: relative;
+	padding-top: 90px;
+	padding-bottom: 82px;
+	position: relative;
 
-  > * {
-    position: relative;
-    z-index: 2;
-  }
+	> * {
+		position: relative;
+		z-index: 2;
+	}
 `;
 
 const BGBox = styled.div`
-  background-image: url("${props => backgrounds[props.background]}");
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  opacity: .1;
-  background-attachment: fixed;
+	background-image: url("${props => backgrounds[props.background]}");
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	opacity: .1;
+	background-attachment: fixed;
 `;
 
 class PortfolioItem extends React.Component {
-  constructor(props) {
-    super(props);
+	constructor(props) {
+		super(props);
 
-    this.itemData = props.item;
-  }
+		this.itemData = props.item;
+	}
 
-  componentWillReceiveProps(props) {
-    this.itemData = props.item;
-  }
+	componentWillReceiveProps(props) {
+		this.itemData = props.item;
+	}
 
-  renderPortfolioItem() {
-    const item = this.itemData;
+	renderPortfolioImages() {
+		if (this.itemData.hasOwnProperty('images')) {
+			return <Slider images={this.itemData.images} itemID={this.itemData.id} />;
+		}
+	}
 
-    return (
-      <PortfolioItemSection>
-        <BGBox background={item.background} />
-        <PortfolioItemHeader itemdata={item} />
-        <PortfolioItemDescription />
+	renderPortfolioItem() {
+		const item = this.itemData;
 
-        <Slider images={item.images} />
-      </PortfolioItemSection>
-    );
-  }
+		return (
+			<PortfolioItemSection>
+				<BGBox background={item.background} />
+				<PortfolioItemHeader itemdata={item} />
+				<PortfolioItemDescription />
 
-  renderLoader() {
-    return <p>Loading...</p>;
-  }
+				{ this.renderPortfolioImages() }
+			</PortfolioItemSection>
+		);
+	}
 
-  render() {
-    let hasItemData = this.itemData;
+	renderLoader() {
+		return <p>Loading...</p>;
+	}
 
-    return (
-      <div>
-        {hasItemData ? (
-          this.renderPortfolioItem()
-        ) : (
-          this.renderLoader()
-        )}
-      </div>
-    );
-  }
+	render() {
+		let hasItemData = this.itemData;
+
+		return (
+			<div>
+				{hasItemData ? (
+					this.renderPortfolioItem()
+				) : (
+					this.renderLoader()
+				)}
+			</div>
+		);
+	}
 }
 
 export default PortfolioItem;

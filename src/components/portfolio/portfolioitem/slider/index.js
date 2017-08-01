@@ -7,6 +7,7 @@ class Slider extends React.Component {
 		super(props);
 		
 		this.imageData = props.images;
+		this.itemID = props.itemID;
 
 		this.state = {
 			imageIndex: 0
@@ -24,7 +25,7 @@ class Slider extends React.Component {
 	}
 
 	increaseImageIndex() {
-		if (this.state.imageIndex < this.imageData.full.length - 1) {
+		if (this.state.imageIndex < this.imageData.length - 1) {
 			this.setState((prevState) => {
 				const newindex = prevState.imageIndex += 1;
 
@@ -45,18 +46,17 @@ class Slider extends React.Component {
 		const controlMethods = {
 			decreaseImageIndex: showPrevImage,
 			increaseImageIndex: showNextImage
-			}
+		}
 
-			return (
-				<PortfolioItemImages 
-					fullimages={this.imageData.full} 
-					mediumimages={this.imageData.medium}
-					smallimages={this.imageData.small}
-					activeimage={this.state.imageIndex} 
-					controlmethods={controlMethods} 
-				/>
-			);
-    }
+		return (
+			<PortfolioItemImages 
+				images={this.imageData}
+				itemID={this.itemID}
+				activeimage={this.state.imageIndex}
+				controlmethods={controlMethods}
+			/>
+		);
+	}
 }
 
 export default Slider;

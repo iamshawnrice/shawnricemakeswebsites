@@ -96,10 +96,6 @@ class PortfolioItem extends React.Component {
   getClasses() {
     let classes = this.props.index % 2 === 0 ? 'portfolio-item even' : 'portfolio-item odd';
 
-    if (this.props.active) {
-      classes += ' is-active';
-    }
-
     return classes;
   }
 

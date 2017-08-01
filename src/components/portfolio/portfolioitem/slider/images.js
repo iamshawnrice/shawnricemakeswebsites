@@ -13,45 +13,29 @@ const Sliders = styled.div`
 	margin: 0 auto 4rem;
 `;
 
-class PortfolioItemImages extends React.Component {
-	render() {
-		const fullImages = this.props.fullimages;
-		const mediumImages = this.props.mediumimages;
-		const smallImages = this.props.smallimages;
-		const activeImage = this.props.activeimage;
+const PortfolioItemImages = props => {
+	const images = props.images;
+	const itemID = props.itemID;
+	const activeImage = props.activeimage;
 
-		const prevSlide = this.props.controlmethods.decreaseImageIndex;
-		const nextSlide = this.props.controlmethods.increaseImageIndex;
+	const prevSlide = props.controlmethods.decreaseImageIndex;
+	const nextSlide = props.controlmethods.increaseImageIndex;
 
-		return(
-			<Sliders>
-				<SliderControlPrev clickcallback={prevSlide}/>
+	return(
+		<Sliders>
+			<SliderControlPrev clickcallback={prevSlide}/>
 
-				<Slider
-					images={fullImages}
-					imagecount={fullImages.length}
-					activeimage={activeImage}
-					maxwidth={1440}
-				/>
+			<Slider
+				images={images}
+				imagecount={images.length}
+				activeimage={activeImage}
+				itemID={itemID}
+				maxwidth={1440}
+			/>
 
-				<Slider
-					images={mediumImages}
-					imagecount={mediumImages.length}
-					activeimage={activeImage}
-					maxwidth={768}
-				/>
-
-				<Slider
-					images={smallImages}
-					imagecount={smallImages.length}
-					activeimage={activeImage}
-					maxwidth={375}
-				/>
-
-				<SliderControlNext clickcallback={nextSlide}/>
-			</Sliders>
-		);
-	}
+			<SliderControlNext clickcallback={nextSlide}/>
+		</Sliders>
+	);
 }
 
 export default PortfolioItemImages;
