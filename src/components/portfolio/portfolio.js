@@ -4,8 +4,11 @@ import PortfolioItem from './portfolio-item';
 import styled from 'styled-components';
 
 const PortfolioSection = styled.section`
-  padding-top: 90px;
-  padding-bottom: 82px;
+  padding: 9rem 0 8.2rem;
+	
+	@media (max-width: 767px) {
+		padding: 0;
+	}
 `;
 
 class Portfolio extends React.Component {

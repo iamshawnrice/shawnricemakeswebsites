@@ -3,6 +3,7 @@ import SVGInline from 'react-svg-inline';
 import styled from 'styled-components';
 
 const DeviceMockups = styled(SVGInline)`
+	width: 480px;
 `;
 
 class Devices extends React.Component {

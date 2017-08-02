@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import Devices from '../devices';
 
 const Header = styled.header`
   text-align: center;
-  padding-top: 6.5rem;
+	padding-top: 6.5rem;
+	
+	@media (max-width: 767px) {
+		padding-top: 1.5rem;
+	}
 `;
 
 const Title = styled.h1`
   font-size: 7rem;
-  padding-top: .5em;
+	padding-top: .5em;
+	
+	@media (max-width: 767px) {
+		font-size: 5rem;
+	}
 `;
 
 const Tags = styled.p`
@@ -17,7 +24,11 @@ const Tags = styled.p`
   font-size: 3rem;
   padding-top: 1em;
   opacity: .7;
-  margin-bottom: 2em;
+	margin-bottom: 2em;
+	
+	@media (max-width: 767px) {
+		font-size: 2rem;
+	}
 `;
 
 const Link = styled.a`
@@ -52,8 +63,6 @@ class PortfolioItemHeader extends React.Component {
   render() {
     return(
       <Header>
-        <Devices />
-
         <Title>{this.itemData.title}</Title>
 
         {this.renderTags()}

@@ -3,47 +3,54 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Header = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: ${props => props.theme.black};
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 2rem;
-  z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: ${props => props.theme.black};
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 2rem;
+	z-index: 3;
+	
+	@media (max-width: 767px) {
+		position: relative;
+		flex-direction: column;
+		align-items: stretch;
+		text-align: center;
+	}
 `;
 
 const HeaderTitle = styled.h1`
-  flex: 0 0 auto;
-  font-size: 5rem;
+	flex: 0 0 auto;
+	font-size: 5rem;
 `;
 
 const HeaderTitleLink = styled(Link)`
-  color: ${props => props.theme.white};
-  text-decoration: none;
+	color: ${props => props.theme.white};
+	text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.white};
-    text-decoration: none;
-  }
+	&:hover {
+		color: ${props => props.theme.white};
+		text-decoration: none;
+	}
 `;
 
 const HeaderSubTitle = styled.p`
-  font-size: 3rem;
+	font-size: 3rem;
 `;
 
 const SiteHeader = () => {
-  return (
-    <Header>
-        <HeaderTitle>
-          <HeaderTitleLink to='/'>Shawn Rice</HeaderTitleLink>
-        </HeaderTitle>
+	return (
+		<Header>
+			<HeaderTitle>
+				<HeaderTitleLink to='/'>Shawn Rice</HeaderTitleLink>
+			</HeaderTitle>
 
-        <HeaderSubTitle>web developer</HeaderSubTitle>
-    </Header>
-  );
+			<HeaderSubTitle>web developer</HeaderSubTitle>
+		</Header>
+	);
 }
 
 export default SiteHeader;
