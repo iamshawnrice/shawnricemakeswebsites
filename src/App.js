@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import data from './data';
+import utils from './utils';
 
 import Header from './components/header';
 import Footer from './components/footer';
@@ -10,7 +11,8 @@ import PortfolioItem from './components/portfolio/portfolioitem';
 
 class App extends React.Component {
   state = {
-    items: data.portfolio.items
+		items: data.portfolio.items,
+		isMobile: utils.isMobile()
   }
 
   renderPortfolio() {
@@ -26,12 +28,12 @@ class App extends React.Component {
       <div>
         <Router>
           <div>
-            <Header />
+            <Header ismobile={this.state.isMobile}/>
 
             <Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
             <Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
 
-            <Footer />
+            <Footer ismobile={this.state.isMobile}/>
           </div>
         </Router>
       </div>

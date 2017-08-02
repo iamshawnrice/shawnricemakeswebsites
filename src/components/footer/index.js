@@ -20,6 +20,8 @@ const SiteFooter = styled.footer`
 	@media (max-width: 767px) {
 		position: relative;
 		flex-direction: column;
+		align-items: stretch;
+		text-align: center;
 	}
 `;
 
@@ -30,18 +32,29 @@ const SiteFooterSocial = styled.ul`
 	li {
 		display: inline-block;
 		margin-right: .5em;
-		width: 36px;
+		width: 3.6rem;
 
 		&:last-of-type {
 			margin-right: 0;
 		}
+
+		@media (max-width: 767px) {
+			width: 2.8rem;
+			margin-right: 1em;
+		}
 	}
 `;
 
-const Footer = () => {
+const Footer = props => {
+	function renderNav() {
+		if (!props.ismobile) {
+			return <Nav />
+		}
+	};
+
 	return (
 		<SiteFooter>
-			<Nav />
+			{renderNav()}
 
 			<SiteFooterSocial>
 				<li>

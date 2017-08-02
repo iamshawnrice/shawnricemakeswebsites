@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import Nav from '../nav';
+
 const Header = styled.header`
 	position: fixed;
 	top: 0;
@@ -19,6 +21,12 @@ const Header = styled.header`
 		flex-direction: column;
 		align-items: stretch;
 		text-align: center;
+		border-bottom: 1px solid ${props => props.theme.white};
+
+		ul {
+			font-size: 2.4rem;
+			padding-top: 1em;
+		}
 	}
 `;
 
@@ -39,9 +47,19 @@ const HeaderTitleLink = styled(Link)`
 
 const HeaderSubTitle = styled.p`
 	font-size: 3rem;
+
+	@media (max-width: 767px) {
+		font-size: 2.4rem;
+	}
 `;
 
-const SiteHeader = () => {
+const SiteHeader = props => {
+	function renderNav() {
+		if (props.ismobile) {
+			return <Nav />
+		}
+	};
+
 	return (
 		<Header>
 			<HeaderTitle>
@@ -49,6 +67,8 @@ const SiteHeader = () => {
 			</HeaderTitle>
 
 			<HeaderSubTitle>web developer</HeaderSubTitle>
+
+			{renderNav()}
 		</Header>
 	);
 }

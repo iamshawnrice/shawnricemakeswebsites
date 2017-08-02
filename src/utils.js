@@ -1,7 +1,15 @@
+import verge from 'verge';
+
 const utils = {
-  randomNumber(from, to) {
-    return Math.round(Math.random() * to) + from
-  }
+  isMobile: function() {
+		let isMobile = false;
+
+		if (verge.viewportW() <= 767) {
+			isMobile = true
+		}
+
+		return isMobile;
+	}
 }
 
 export default utils;
