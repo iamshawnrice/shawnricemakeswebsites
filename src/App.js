@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { debounce } from 'lodash';
 
 import data from './data';
 import utils from './utils';
@@ -25,11 +24,7 @@ class App extends React.Component {
 	}
 
 	recalculateWindowWidth() {
-		function _setState() {
-			this.setState(prevState => Object.assign({}, prevState, {isMobile: utils.isMobile()}) );
-		}
-
-		debounce(_setState, 100);
+		this.setState(prevState => Object.assign({}, prevState, {isMobile: utils.isMobile()}));
 	}
 
 	componentDidMount() {
