@@ -16,8 +16,8 @@ const SiteFooter = styled.footer`
 	left: 0;
 	background-color: ${props => props.theme.black};
 	z-index: 3;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		position: relative;
 		flex-direction: column;
 		align-items: stretch;
@@ -38,7 +38,7 @@ const SiteFooterSocial = styled.ul`
 			margin-right: 0;
 		}
 
-		@media (max-width: 767px) {
+		@media (max-width: ${props => props.theme.bpSmall}) {
 			width: 2.8rem;
 			margin-right: 1em;
 		}

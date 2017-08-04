@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const PortfolioSection = styled.section`
   padding: 9rem 0 8.2rem;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		padding: 0;
 	}
 `;

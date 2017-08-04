@@ -15,8 +15,8 @@ const Header = styled.header`
 	justify-content: space-between;
 	padding: 2rem;
 	z-index: 3;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		position: relative;
 		flex-direction: column;
 		align-items: stretch;
@@ -48,7 +48,7 @@ const HeaderTitleLink = styled(Link)`
 const HeaderSubTitle = styled.p`
 	font-size: 3rem;
 
-	@media (max-width: 767px) {
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		font-size: 2.4rem;
 	}
 `;

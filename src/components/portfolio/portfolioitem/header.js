@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Header = styled.header`
   text-align: center;
 	padding-top: 6.5rem;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		padding-top: 1.5rem;
 	}
 `;
@@ -13,8 +13,8 @@ const Header = styled.header`
 const Title = styled.h1`
   font-size: 7rem;
 	padding-top: .5em;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		font-size: 5rem;
 	}
 `;
@@ -25,8 +25,8 @@ const Tags = styled.p`
   padding-top: 1em;
   opacity: .7;
 	margin-bottom: 2em;
-	
-	@media (max-width: 767px) {
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
 		font-size: 2rem;
 	}
 `;
