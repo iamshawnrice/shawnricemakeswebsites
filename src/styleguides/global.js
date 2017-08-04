@@ -10,7 +10,10 @@ const styleGuide = {
   serif: 'Ovo, sans-serif',
 
   // layout
-  paragraphMaxWidth: '832px'
+	paragraphMaxWidth: '832px',
+
+	// breakpoints
+	bpSmall: '767px'
 }
 
 export default styleGuide;

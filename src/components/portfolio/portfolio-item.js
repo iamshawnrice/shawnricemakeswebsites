@@ -13,26 +13,20 @@ const PortfolioItemArticle = styled.article`
   flex-direction: column;
   padding: 3.2rem 2.4rem;
   position: relative;
-  border-bottom: 1px solid ${props => props.theme.white};
+	border-bottom: 1px solid ${props => props.theme.white};
 `;
 
 const PortfolioItemLink = styled(Link)`
   display: flex;
   flex: 1 1 auto;
   color: ${props => props.theme.white};
-  text-decoration: none;
-`;
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
 
-const PortfolioItemHeader = styled.header`
-  display: flex;
-  flex: 1 1 auto;
-  position: relative;
-  z-index: 2;
-
-  .is-active & {
-    flex-direction: column;
-    text-align: center;
-  }
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		flex-direction: column;
+	}
 `;
 
 const PortfolioItemInfo = styled.div`
@@ -46,11 +40,14 @@ const PortfolioItemInfo = styled.div`
     order: 2;
   }
 
-  .is-active & {
-    order: 2;
-    text-align: center;
-    margin-top: 4em;
-  }
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		order: 2;
+		text-align: center;
+
+		.even & {
+			order: 2;
+		}
+	}
 `;
 
 const PortfolioItemTitle = styled.h2`
@@ -66,12 +63,17 @@ const PortfolioItemPreview = styled.div`
   .even & {
     order: 1;
     text-align: left;
-  }
+	}
 
-  .is-active & {
-    text-align: center;
-    order: 1;
-  }
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		order: 1;
+		margin-bottom: 2em;
+		text-align: center;
+
+		.even & {
+			text-align: center;
+		}
+	}
 `;
 
 const BgBox = styled.div`
@@ -109,17 +111,15 @@ class PortfolioItem extends React.Component {
     return (
       <PortfolioItemArticle className={this.getClasses()}>
         <PortfolioItemLink to={'/portfolio/' + this.props.item.id}>
-          <PortfolioItemHeader>
-            <PortfolioItemInfo>
-              <PortfolioItemTitle>{this.props.item.title}</PortfolioItemTitle>
+					<PortfolioItemInfo>
+						<PortfolioItemTitle>{this.props.item.title}</PortfolioItemTitle>
 
-              {this.renderTags()}
-            </PortfolioItemInfo>
+						{this.renderTags()}
+					</PortfolioItemInfo>
 
-            <PortfolioItemPreview>
-              <Devices />
-            </PortfolioItemPreview>
-          </PortfolioItemHeader>
+					<PortfolioItemPreview>
+						<Devices />
+					</PortfolioItemPreview>
         </PortfolioItemLink>
 
         {this.showDetail()}
