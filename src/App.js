@@ -12,16 +12,19 @@ import About from './components/about';
 
 class App extends React.Component {
 	state = {
-		items: data.portfolio.items,
 		isMobile: utils.isMobile()
 	}
 
 	renderPortfolio() {
-		return <Portfolio items={this.state.items} />;
+		return <Portfolio items={data.portfolio.items} />;
 	}
 
 	renderPortfolioItem(args) {
-		return <PortfolioItem item={this.state.items[args.match.params.id]} />;
+		return <PortfolioItem item={data.portfolio.items[args.match.params.id]} />;
+	}
+
+	renderAboutPage() {
+		return <About data={data.pages.about} />
 	}
 
 	recalculateWindowWidth() {
@@ -46,7 +49,7 @@ class App extends React.Component {
 						<Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
 						<Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
 
-						<Route path="/about" exact render={About} />
+						<Route path="/about" exact render={this.renderAboutPage.bind(this)} />
 
 						<Footer ismobile={this.state.isMobile}/>
 					</div>
