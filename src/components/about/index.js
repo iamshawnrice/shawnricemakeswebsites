@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Image from './image';
+
 const AboutSection = styled.section`
 	padding-top: 90px;
 	padding-bottom: 82px;
@@ -18,7 +20,7 @@ const About = props => {
 	return (
 		<AboutSection>
 			<AboutImage>
-				<h1>Hello from the about page</h1>
+				<Image imagedata={props.data.image} />
 			</AboutImage>
 		</AboutSection>
 	)
