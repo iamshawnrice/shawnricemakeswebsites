@@ -8,6 +8,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Portfolio from './components/portfolio/portfolio';
 import PortfolioItem from './components/portfolio/portfolioitem';
+import About from './components/about';
 
 class App extends React.Component {
 	state = {
@@ -44,6 +45,8 @@ class App extends React.Component {
 
 						<Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
 						<Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
+
+						<Route path="/about" exact render={About} />
 
 						<Footer ismobile={this.state.isMobile}/>
 					</div>

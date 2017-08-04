@@ -11,6 +11,7 @@ const PortfolioItemSection = styled.section`
 	padding-top: 90px;
 	padding-bottom: 82px;
 	position: relative;
+	min-height: calc(100vh);
 
 	> * {
 		position: relative;

@@ -34,7 +34,7 @@ const Nav = props => {
 	return (
 		<SiteNav>
 			<li><NavLink to="/portfolio">portfolio</NavLink></li>
-			<li>about</li>
+			<li><NavLink to="/about">about</NavLink></li>
 			<li>contact</li>
 		</SiteNav>
 	);
