@@ -1,22 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import PageWrap from '../../pagewrap';
+
 import PortfolioItemHeader from './header';
 import PortfolioItemDescription from './description';
 import Slider from './slider';
 
 import backgrounds from '../../../styleguides/backgrounds';
 
-const PortfolioItemSection = styled.section`
-	padding-top: 90px;
-	padding-bottom: 82px;
-	position: relative;
+const PortfolioItemSection = PageWrap.extend`
 	min-height: calc(100vh);
-
-	> * {
-		position: relative;
-		z-index: 2;
-	}
 `;
 
 const BGBox = styled.div`
