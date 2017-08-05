@@ -48,6 +48,12 @@ class PortfolioItem extends React.Component {
 		}
 	}
 
+	renderPortfolioDescription() {
+		if (this.itemData.hasOwnProperty('description')) {
+			return <PortfolioItemDescription itemtext={this.itemData.description} />
+		}
+	}
+
 	renderPortfolioItem() {
 		const item = this.itemData;
 
@@ -55,9 +61,8 @@ class PortfolioItem extends React.Component {
 			<PortfolioItemSection>
 				<BGBox background={item.background} />
 				<PortfolioItemHeader itemdata={item} />
-				<PortfolioItemDescription />
-
-				{ this.renderPortfolioImages() }
+				{this.renderPortfolioDescription()}
+				{this.renderPortfolioImages()}
 			</PortfolioItemSection>
 		);
 	}
