@@ -35,7 +35,7 @@ const Nav = props => {
 		<SiteNav>
 			<li><NavLink to="/portfolio">portfolio</NavLink></li>
 			<li><NavLink to="/about">about</NavLink></li>
-			<li>contact</li>
+			<li><a href="mailto:iamshawnrice@gmail.com">contact</a></li>
 		</SiteNav>
 	);
 }

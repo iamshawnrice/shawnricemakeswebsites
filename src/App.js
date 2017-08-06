@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import data from './data';
 import utils from './utils';
 
+import ScrollManager from './components/scrollmanager';
+
 import Header from './components/header';
 import Footer from './components/footer';
 import Portfolio from './components/portfolio/portfolio';
@@ -35,20 +37,17 @@ class App extends React.Component {
 		window.addEventListener('resize', this.recalculateWindowWidth.bind(this));
 	}
 
-	componentWillUnmount() {
-		window.removeEventListener('resize', this.recalculateWindowWidth.bind(this));
-	}
-
 	render() {
 		return (
 			<div>
 				<Router>
 					<div>
+						<ScrollManager />
+
 						<Header ismobile={this.state.isMobile}/>
 
 						<Route path="/portfolio/" exact render={this.renderPortfolio.bind(this)} />
 						<Route path="/portfolio/:id" render={this.renderPortfolioItem.bind(this)} />
-
 						<Route path="/about" exact render={this.renderAboutPage.bind(this)} />
 
 						<Footer ismobile={this.state.isMobile}/>

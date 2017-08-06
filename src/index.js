@@ -11,9 +11,9 @@ import './index.css';
 import global from './styleguides/global';
 
 ReactDOM.render(
-    <ThemeProvider theme={global}>
-        <App />
-    </ThemeProvider>,
-    document.getElementById('root'));
+	<ThemeProvider theme={global}>
+		<App />
+	</ThemeProvider>,
+	document.getElementById('root'));
 
 registerServiceWorker();
