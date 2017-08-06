@@ -31,7 +31,7 @@ class App extends React.Component {
 	}
 
 	renderIntroduction() {
-		return <Introduction />
+		return <Introduction data={data.pages.introduction} />
 	}
 
 	recalculateWindowWidth() {

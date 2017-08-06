@@ -33,6 +33,7 @@ const Header = styled.header`
 const HeaderTitle = styled.h1`
 	flex: 0 0 auto;
 	font-size: 5rem;
+	margin-bottom: 0;
 `;
 
 const HeaderTitleLink = styled(Link)`

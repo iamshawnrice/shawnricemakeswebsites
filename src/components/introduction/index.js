@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import PageWrap from '../pagewrap';
+import TextBlock from '../textblock';
+import History from './history';
 
 const IntroHeader = styled.header`
 	text-align: center;
@@ -24,8 +26,12 @@ class Introduction extends React.Component {
 						<img src="/images/introduction/headshot-740.jpg" alt="Shawn Rice" />
 					</IntroImage>
 
-					<h2>Hi. I'm Shawn</h2>
+					<h2>{this.props.data.introcopy.heading}</h2>
+
+					<TextBlock textcontent={this.props.data.introcopy.introduction} />
 				</IntroHeader>
+
+				<History />
 			</PageWrap>
 		);
 	}
