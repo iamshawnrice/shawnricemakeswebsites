@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Milestone from './milestone';
+
 const HistorySection = styled.section`
 	padding: 5rem 0;
 	position: relative;
@@ -9,7 +11,7 @@ const HistorySection = styled.section`
 		content: "";
 		display: block;
 		width: 2px;
-		background-color: ${props => props.theme.blue};
+		background-color: ${props => props.theme.white};
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -20,7 +22,9 @@ const HistorySection = styled.section`
 class History extends React.Component {
 	render() {
 		return (
-			<HistorySection />
+			<HistorySection>
+				<Milestone />
+			</HistorySection>
 		);
 	}
 }

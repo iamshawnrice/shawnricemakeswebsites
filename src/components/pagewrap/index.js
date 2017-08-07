@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const PageWrap = styled.section`
-	padding-top: 90px;
+	padding-top: 115px;
 	padding-bottom: 82px;
 	position: relative;
 

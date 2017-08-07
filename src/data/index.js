@@ -62,7 +62,7 @@ const data = {
 			},
 			introcopy: {
 				heading: "Hi. I'm Shawn Rice.",
-				introduction: "I am a web developer living and working in Charleston, SC. I am currently making E-commerce websites for the Salesforce Commerce Cloud platform with a company called Blue Acorn."
+				introduction: "I am a web developer living and working in Charleston, SC. I am currently making E-commerce websites on the Salesforce Commerce Cloud platform for a company called Blue Acorn."
 			}
 		}
 	}
