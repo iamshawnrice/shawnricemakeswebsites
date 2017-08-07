@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TextBlockDiv = styled.div`
-  max-width: ${props => props.theme.paragraphMaxWidth};
-  width: 92%;
+	width: auto;
+	max-width: ${props => props.theme.paragraphMaxWidth};
   margin: 8rem auto 2rem;
-  border-top: 1px solid ${props => props.theme.white};
-  border-bottom: 1px solid ${props => props.theme.white};
   font-family: ${props => props.theme.sans};
   text-align: center;
-  padding: 6rem 0;
+	padding: 6rem 4rem;
+	position: relative;
 
   p {
     font-size: 2.4rem;
@@ -19,7 +18,29 @@ const TextBlockDiv = styled.div`
 	@media (max-width: ${props => props.theme.bpSmall}) {
 		width: 100%;
 		margin: 3rem auto 0;
-		padding: 3rem 0 2rem;;
+		padding: 3rem 4rem 2rem;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		top: 0;
+		left: 2rem;
+		right: 2rem;
+		background-color: ${props => props.theme.white};
+		height: 1px;
+		position: absolute;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		bottom: 0;
+		left: 2rem;
+		right: 2rem;
+		background-color: ${props => props.theme.white};
+		height: 1px;
+		position: absolute;
 	}
 `;
 

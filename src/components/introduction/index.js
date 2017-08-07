@@ -7,14 +7,23 @@ import History from './history';
 
 const IntroHeader = styled.header`
 	text-align: center;
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		padding-top: 2rem;
+	}
 `;
 
 const IntroImage = styled.div`
 	display: inline-block;
 	border-radius: 50%;
+	width: 60%;
 	max-width: 340px;
 	overflow: hidden;
 	margin-bottom: 4em;
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		margin-top: 2rem;
+	}	
 `;
 
 class Introduction extends React.Component {

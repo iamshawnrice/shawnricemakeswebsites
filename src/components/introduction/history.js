@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Milestone from './milestone';
 
 const HistorySection = styled.section`
-	padding: 5rem 0;
+	padding: 5rem 2rem 0;
 	position: relative;
 	margin: 10rem auto;
 	max-width: ${props => props.theme.paragraphMaxWidth};
@@ -12,12 +12,13 @@ const HistorySection = styled.section`
 	&:after {
 		content: "";
 		display: block;
-		width: 2px;
-		background-color: ${props => props.theme.white};
+		width: 1px;
+		background-color: ${props => props.theme.gray50};
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: calc(50% - 1px);
+		z-index: 1;
 	}
 `;
 

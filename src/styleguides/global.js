@@ -1,6 +1,7 @@
 const styleGuide = {
   // colors
-  white: '#edeae2',
+	white: '#edeae2',
+	gray50: '#9a9791',
   black: '#464541',
   blue: '#6b83a6',
   orange: '#ce7829',

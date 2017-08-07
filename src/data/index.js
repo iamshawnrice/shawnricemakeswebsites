@@ -66,6 +66,7 @@ const data = {
 			},
 			milestones: [
 				{
+					image: '/images/history/dp-3d-logo.png',
 					date: 'Sometime in 2011 (But before September)',
 					title: 'Unnamed Real Estate Company',
 					description: 'I was working as a rental agent for a real estate broker in Brooklyn, when my boss simply decided that I could make websites. Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied, paid me a few hundred dollars and immediately asked for another. I was never interested in showing another apartment again. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
