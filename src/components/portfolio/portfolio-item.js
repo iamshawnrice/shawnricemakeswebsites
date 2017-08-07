@@ -118,7 +118,7 @@ class PortfolioItem extends React.Component {
 					</PortfolioItemInfo>
 
 					<PortfolioItemPreview>
-						<Devices />
+						<Devices imagepath={this.props.item.featuredimage}/>
 					</PortfolioItemPreview>
         </PortfolioItemLink>
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Devices from '../devices';
+
 const Header = styled.header`
   text-align: center;
 	padding-top: 6.5rem;
@@ -63,6 +65,8 @@ class PortfolioItemHeader extends React.Component {
   render() {
     return(
       <Header>
+				<Devices imagepath={this.itemData.featuredimage}/>
+
         <Title>{this.itemData.title}</Title>
 
         {this.renderTags()}
