@@ -31,7 +31,7 @@ class Introduction extends React.Component {
 					<TextBlock textcontent={this.props.data.introcopy.introduction} />
 				</IntroHeader>
 
-				<History />
+				<History milestones={this.props.data.milestones} />
 			</PageWrap>
 		);
 	}

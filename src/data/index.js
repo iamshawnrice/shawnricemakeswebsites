@@ -62,8 +62,20 @@ const data = {
 			},
 			introcopy: {
 				heading: "Hi. I'm Shawn Rice.",
-				introduction: "I am a web developer living and working in Charleston, SC. I am currently making E-commerce websites on the Salesforce Commerce Cloud platform for a company called Blue Acorn. But there "
-			}
+				introduction: "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the best one. { Insert something quippy about background in art, being self-taught, or something about just falling into this career. } It all started when..."
+			},
+			milestones: [
+				{
+					date: 'Sometime in 2011 (But before September)',
+					title: 'Unnamed Real Estate Company',
+					description: 'I was working as a rental agent for a real estate broker in Brooklyn, when my boss simply decided that I could make websites. Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied, paid me a few hundred dollars and immediately asked for another. I was never interested in showing another apartment again. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
+				},
+				{
+					date: 'September 2011',
+					title: 'Something snarky and clever',
+					description: 'I was working as a rental agent for a real estate broker in Brooklyn, when my boss simply decided that I could make websites. Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied, paid me a few hundred dollars and immediately asked for another. I was never interested in showing another apartment again. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
+				}
+			]
 		}
 	}
 }

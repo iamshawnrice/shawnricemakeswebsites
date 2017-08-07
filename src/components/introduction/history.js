@@ -6,6 +6,8 @@ import Milestone from './milestone';
 const HistorySection = styled.section`
 	padding: 5rem 0;
 	position: relative;
+	margin: 10rem auto;
+	max-width: ${props => props.theme.paragraphMaxWidth};
 
 	&:after {
 		content: "";
@@ -19,14 +21,16 @@ const HistorySection = styled.section`
 	}
 `;
 
-class History extends React.Component {
-	render() {
-		return (
-			<HistorySection>
-				<Milestone />
-			</HistorySection>
-		);
-	}
+const History = props => {
+	const milestones = props.milestones;
+
+	return (
+		<HistorySection>
+			{
+				milestones.map((milestone, index) => <Milestone item={milestone} index={index} key={index} />)
+			}
+		</HistorySection>
+	);
 }
 
 export default History;
