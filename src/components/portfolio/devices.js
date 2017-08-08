@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const DevicesDiv = styled.div`
 	width: 320px;
 	position: relative;
+	display: inline-block;
 `;
 
 const DevicesImage = styled.img`
