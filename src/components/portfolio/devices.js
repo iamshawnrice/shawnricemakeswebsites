@@ -11,9 +11,9 @@ const DevicesDiv = styled.div`
 const DevicesImage = styled.img`
 	position: absolute;
 	top: 21px;
-	left: 40px;
+	left: 42px;
 	z-index: 2;
-	width: 238px;
+	width: 236px;
 `;
 
 const Devices = props => {

@@ -15,6 +15,15 @@ const TextBlockDiv = styled.div`
     line-height: 1.6;
 	}
 
+	a {
+		text-decoration: none;
+		color: ${props => props.theme.blue};
+
+		&:hover {
+			color: ${props => props.theme.orange};
+		}
+	}
+
 	@media (max-width: ${props => props.theme.bpSmall}) {
 		width: 100%;
 		margin: 3rem auto 0;
@@ -45,9 +54,13 @@ const TextBlockDiv = styled.div`
 `;
 
 const TextBlock = props => {
+	function createTextContent(text) {
+		return { __html: text };
+	}
+
 	return (
 		<TextBlockDiv>
-			<p>{props.textcontent}</p>
+			<p dangerouslySetInnerHTML={createTextContent(props.textcontent)} />
 		</TextBlockDiv>
 	);
 };
