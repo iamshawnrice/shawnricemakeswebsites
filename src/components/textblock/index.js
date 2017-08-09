@@ -12,7 +12,8 @@ const TextBlockDiv = styled.div`
 
   p {
     font-size: 2.4rem;
-    line-height: 1.6;
+		line-height: 2;
+		letter-spacing: .1rem;
 	}
 
 	a {

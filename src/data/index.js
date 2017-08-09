@@ -66,19 +66,32 @@ const data = {
 			},
 			introcopy: {
 				heading: "Hi. I'm Shawn Rice.",
-				introduction: "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the best one. { Insert something quippy about background in art, being self-taught, or something about just falling into this career. } It all started when..."
+				introduction: "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the best one. My career started in the arts world so I am well accustomed to communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor to full-time web developer did not occur overnight. It all started when..."
 			},
 			milestones: [
 				{
-					image: '/images/history/dp-3d-logo.png',
-					date: 'Sometime in 2011 (But before September)',
-					title: 'Unnamed Real Estate Company',
-					description: 'I was working as a rental agent for a real estate broker in Brooklyn, when my boss simply decided that I could make websites. Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied, paid me a few hundred dollars and immediately asked for another. I was never interested in showing another apartment again. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
+					image: {
+						file: '/images/history/lightbulb.svg',
+						alt: 'Lightbulb'
+					},
+					date: 'Sometime in 2011',
+					title: 'Fish Out of Water',
+					description: 'Fed up with the gypsy lifestyle of a theater atrist, I was working as a rental agent for a real estate broker in Brooklyn. Ony day my boss simply decided that I should make a website for one of our new properties (though I had made no indications that I possessed the knowhow nor the inclination). Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied: he paid me a couple hundred dollars and immediately asked for another. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
 				},
 				{
-					date: 'September 2011',
-					title: 'Something snarky and clever',
-					description: 'I was working as a rental agent for a real estate broker in Brooklyn, when my boss simply decided that I could make websites. Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied, paid me a few hundred dollars and immediately asked for another. I was never interested in showing another apartment again. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.'
+					date: 'September 2011 - September 2012',
+					title: 'Freelancing Across America',
+					description: 'Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working with/beneath someone more knowledgeable than myself.'
+				},
+				{
+					date: 'September 2012 - February 2013',
+					title: 'Meanwhile back in New York...',
+					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="https://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://blondie.com">Blondie</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
+				},
+				{
+					date: 'February 2013 - September 2015',
+					title: 'A Different Kind of Agency',
+					description: 'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. It may not have played out exactly like that, but that‘s a story for a different time...the important detail is that I returned to Florida, got married, and began working for a great creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the rabbit hole that is ecommerce, and how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment upfront that saves hours and hours of emails and consultation down the road.'
 				}
 			]
 		}
