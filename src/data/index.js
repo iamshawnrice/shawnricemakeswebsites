@@ -81,17 +81,22 @@ const data = {
 				{
 					date: 'September 2011 - September 2012',
 					title: 'Freelancing Across America',
-					description: 'Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working with/beneath someone more knowledgeable than myself.'
+					description: 'Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing Rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working with/beneath someone more knowledgeable than myself.'
 				},
 				{
 					date: 'September 2012 - February 2013',
-					title: 'Meanwhile back in New York...',
+					title: 'Meanwhile back in the city...',
 					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="https://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://blondie.com">Blondie</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
 				},
 				{
-					date: 'February 2013 - September 2015',
+					date: 'February 2013 - July 2014',
 					title: 'A Different Kind of Agency',
-					description: 'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. It may not have played out exactly like that, but that‘s a story for a different time...the important detail is that I returned to Florida, got married, and began working for a great creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the rabbit hole that is ecommerce, and how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment upfront that saves hours and hours of emails and consultation down the road.'
+					description: 'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, got married, and began working for a great creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the rabbit hole that is ecommerce, and how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment upfront that saves hours and hours of emails and consultation down the road.'
+				},
+				{
+					date: 'July 2014 - February 2015',
+					title: 'This tweet brought to you by...',
+					description: 'The agency work was fast paced and exciting, but I felt as though I was missing out by not working on a team of developers. Enter <a href="https://izea.com">Izea</a>: a marketplace for sponsored social media content. '
 				}
 			]
 		}
