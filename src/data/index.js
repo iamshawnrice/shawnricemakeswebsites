@@ -66,7 +66,7 @@ const data = {
 			},
 			introcopy: {
 				heading: "Hi. I'm Shawn Rice.",
-				introduction: "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the best one. My career started in the arts world so I am well accustomed to communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor to full-time web developer did not occur overnight. It all started when..."
+				introduction: "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the best one. My career started in the arts world so I am well accustomed to communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to mid-level web developer did not occur overnight. It all started when..."
 			},
 			milestones: [
 				{
@@ -85,18 +85,23 @@ const data = {
 				},
 				{
 					date: 'September 2012 - February 2013',
-					title: 'Meanwhile back in the city...',
-					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="https://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://blondie.com">Blondie</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
+					title: 'Meanwhile Back in the City...',
+					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="https://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://beetlebailey.com">Beetle Bailey</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
 				},
 				{
 					date: 'February 2013 - July 2014',
 					title: 'A Different Kind of Agency',
-					description: 'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, got married, and began working for a great creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the rabbit hole that is ecommerce, and how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment upfront that saves hours and hours of emails and consultation down the road.'
+					description: 'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, married a fantastic girl named Heather, and began working for a full-service creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the rabbit hole that is ecommerce, and showed me how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment up front that saves hours and hours of emails and consultation down the road.'
 				},
 				{
-					date: 'July 2014 - February 2015',
-					title: 'This tweet brought to you by...',
-					description: 'The agency work was fast paced and exciting, but I felt as though I was missing out by not working on a team of developers. Enter <a href="https://izea.com">Izea</a>: a marketplace for sponsored social media content. '
+					date: 'July 2014 - February 2016',
+					title: 'There’s No I in Team',
+					description: 'The agency work was fast paced and exciting, but I felt as though I was missing out by not working on a team. I spent the next two and a half years working with two great teams at <a href="https://izea.com">Izea</a> and <a href="http://junyo.com">Junyo</a>. I learned the importance of code standards, the fine art of collaboration via GitHub, and the pain of tech debt. I had the opportunity to work with a great variety of technologies including Ruby on Rails, Bootstrap, Django, Backbone, Angular, a little bit of Highcharts and a little bit of Node. It was truly inspiring to be surrounded by so many people who were committed to pushing their skillsets further and doing good work.'
+				},
+				{
+					date: 'February 2016 - This Very Day',
+					title: 'Ecommerce in the Holy City',
+					description: 'Seeking an exit from Florida before we began a family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="https://blueacorn.com">Blue Acorn</a> has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.'
 				}
 			]
 		}
