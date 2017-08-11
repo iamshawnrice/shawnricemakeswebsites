@@ -1,8 +1,5 @@
 const data = {
 	portfolio: {
-		// http://ashleymorganbloom.com/
-		// https://hglightingdesign.com/
-		// http://thebrolodex.com/
 		// http://iamshawnrice.com
 		// Documentation
 		'items' : {
@@ -10,50 +7,56 @@ const data = {
 				'background' : 'bg0',
 				'description' : 'Heather Rice is a singer/songwriter who just released her first full-length album of original music. She is also my wife. She needed a site that was responsive, easy to maintain, and allowed her to build and connect with an audience all over the globe. Designed by the extremely talented <a href="https://dribbble.com/Jonesie">Robert Jones.</a>',
 				'id' : 'iamheatherrice',
-				'tags' : 'wordpress sass bandsintown',
+				'tags' : 'wordpress & bandsintown',
 				'title' : 'iamheatherrice.com',
 				'url' : 'http://iamheatherrice.com',
 				'featuredimage': '/images/portfolio/iamheatherrice/iamheatherrice-preview.jpg'
 			},
-			'sample-item-1' : {
-				'background' : 'bg0',
-				'description' : 'Cornhole fanny pack copper mug brunch. Try-hard keytar sartorial four dollar toast cronut crucifix trust fund shaman ugh. Sriracha readymade jianbing, ugh knausgaard taxidermy keytar tattooed four loko vegan ethical schlitz cardigan. Semiotics food truck you probably haven’t heard of them locavore chambray banh mi tousled, meditation bicycle rights. Keffiyeh vape vexillologist jean shorts chartreuse. Hella synth four dollar toast, try-hard roof party brooklyn poutine pop-up meggings edison bulb. Plaid meditation austin slow-carb vegan mustache humblebrag celiac VHS hexagon. Waistcoat freegan kitsch, organic cronut food truck art party poutine jianbing hell of. Affogato authentic trust fund snackwave taiyaki cronut knausgaard ramps thundercats green juice quinoa aesthetic gochujang jianbing cardigan. Heirloom lumbersexual bicycle rights farm-to-table hoodie tousled waistcoat celiac pour-over chambray fingerstache sartorial live-edge microdosing readymade. 8-bit ugh pop-up bushwick, occupy vice austin hell of. Irony taxidermy marfa cred thundercats. Green juice shaman street art drinking vinegar coloring book. Church-key keytar etsy affogato, asymmetrical bicycle rights af gochujang raw denim PBR&B ramps.',
-				'id' : 'sample-item-1',
-				'tags' : 'wordpress angular sass',
-				'title' : 'iamshawnrice.com',
-				'url' : 'http://example.com',
+			'oliveoyl' : {
+				'background' : 'bg1',
+				'description' : 'I had the good fortune of working with King Features on 15 sites early on in my career, but my favoite has to be Olive Oyl’s. I was provided with a couple of Illustrator files of assets and another site as reference, and was tasked with designing and building a WordPress theme for Olive’s blog. It was truly enjoyable to spend a little bit of quality time with such an iconic character and I am pleased that the site is still live.',
+				'id' : 'oliveoyl',
+				'tags' : 'wordpress',
+				'title' : 'oliveoyl.com',
+				'url' : 'http://oliveoyl.com',
 				'featuredimage': '/images/portfolio/sample-item-1/featured/featured.jpg'
 			},
-			'sample-item-2' : {
-				'background' : 'bg1',
-				'id' : 'sample-item-2',
-				'title' : 'example2.com'
-			},
-			'sample-item-3' : {
+			'thebrolodex' : {
 				'background' : 'bg2',
-				'id' : 'sample-item-3',
-				'title' : 'example3.com'
+				'description' : 'Quite possibly the dumbest idea I have ever had: The Brolodex is a random generator of ‘Brophemisms’ - names and words with the term <em>Bro</em> injected into them. It’s really just a WordPress blog with a bunch of custom attributes added to each post being exposed to the Angular front end via WP’s REST API. But it was a fun experience',
+				'id' : 'thebrolodex',
+				'tags' : 'Angular WordPress VelocityJS',
+				'title' : 'thebrolodex.com',
+				'url' : 'http://thebrolodex.com',
+				'featuredimage': '/images/portfolio/sample-item-1/featured/featured.jpg'
 			},
-			'sample-item-4' : {
+			'ashleymorganbloom' : {
 				'background' : 'bg3',
-				'id' : 'sample-item-4',
-				'title' : 'example4.com'
+				'description' : 'Ashley Bloom is an actor living and working in New York. She needed a simple site to share her work with casting agents that was easy to edit and looked good on devices of all shapes and sizes. So we put our heads together, came up with a simple design that really put her front and center. Since launching it, she has been 100% autonomous and has made multiple changes & additions with a minimum of guidance.',
+				'id' : 'ashleymorganbloom',
+				'tags' : 'WordPress',
+				'title' : 'ashleymorganbloom.com',
+				'url' : 'http://ashleymorganbloom.com',
+				'featuredimage': '/images/portfolio/sample-item-1/featured/featured.jpg'
 			},
-			'sample-item-5' : {
+			'hglightingdesign' : {
 				'background' : 'bg4',
-				'id' : 'sample-item-5',
-				'title' : 'example5.com'
+				'description' : 'Herrick Goldman is a lighting designer who stays very busy in Theater, Film & Television. He needed a site that was easy to add to and maintain. This site was a pleasure to work on because not only is Herrick a super nice guy, but he had tens of thousands of high quality images - it’s rare to have too many good photos to choose from.',
+				'id' : 'hglightingdesign',
+				'tags' : 'WordPress',
+				'title' : 'hglightingdesign.com',
+				'url' : 'http://hglightingdesign.com',
+				'featuredimage': '/images/portfolio/sample-item-1/featured/featured.jpg'
 			},
-			'sample-item-6' : {
+			'iamshawnrice' : {
 				'background' : 'bg5',
-				'id' : 'sample-item-6',
-				'title' : 'example6.com'
+				'description' : 'I have been obsessed with music for as long as I can remember. As an outlet for all of the exciting music discoveries I make throughout my week and in an effort to keep my writing knives sharp, I started a blog that relates a playlist of tunes to a life experience. The blog is powered by WordPress, so when the time comes to upgrade/replace the Angular 1 frontend I can do so quickly & painlessly',
+				'id' : 'iamshawnrice',
+				'tags' : 'WordPress Angular',
+				'title' : 'iamshawnrice.com',
+				'url' : 'http://iamshawnrice.com',
+				'featuredimage': '/images/portfolio/sample-item-1/featured/featured.jpg'
 			},
-			'sample-item-7' : {
-				'background' : 'bg6',
-				'id' : 'sample-item-7',
-				'title' : 'example7.com'
-			}
 		}
 	},
 	pages: {
