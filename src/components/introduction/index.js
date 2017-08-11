@@ -17,13 +17,18 @@ const IntroImage = styled.div`
 	display: inline-block;
 	border-radius: 50%;
 	width: 60%;
-	max-width: 340px;
+	width: 340px;
+	height: 340px;
 	overflow: hidden;
 	margin-bottom: 4em;
+	border: 1px solid ${props => props.theme.white};
 
 	@media (max-width: ${props => props.theme.bpSmall}) {
 		margin-top: 2rem;
-	}	
+
+		width: 310px;
+		height: 310px;
+	}
 `;
 
 class Introduction extends React.Component {

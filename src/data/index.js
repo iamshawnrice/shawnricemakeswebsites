@@ -90,7 +90,7 @@ const data = {
 					},
 					date: 'September 2012 - February 2013',
 					title: 'Meanwhile Back in the City...',
-					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="https://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://beetlebailey.com">Beetle Bailey</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
+					description: 'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="http://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and was able to contribute designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://beetlebailey.com">Beetle Bailey</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.'
 				},
 				{
 					image: {
@@ -117,7 +117,7 @@ const data = {
 					},
 					date: 'February 2016 - This Very Day',
 					title: 'Ecommerce in the Holy City',
-					description: 'Seeking an exit from Florida before we began a family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="https://blueacorn.com">Blue Acorn</a> has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.'
+					description: 'Seeking an exit from Florida before we began a family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="http://blueacorn.com">Blue Acorn</a> has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.'
 				}
 			]
 		}
