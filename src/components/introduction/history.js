@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Milestone from './milestone';
 
 const HistorySection = styled.section`
-	padding: 5rem 2rem 0;
+	padding: 0 2rem;
 	position: relative;
 	margin: 10rem auto;
 	max-width: ${props => props.theme.paragraphMaxWidth};

@@ -53,14 +53,11 @@ const MilestoneIcon = styled.div`
 	left: 50%;
 	top: 0;
 	transform: translate(-50%, -50%);
+	overflow: hidden;
 
 	img {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		max-width: 80%;
-		max-height: 60%;
+		max-width: 100%;
+		border-radius: 50%;
 	}
 `;
 
