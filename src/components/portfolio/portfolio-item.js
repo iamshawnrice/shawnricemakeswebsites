@@ -37,8 +37,12 @@ const PortfolioItemInfo = styled.div`
   text-align: right;
 
   .even & {
-    order: 2;
-  }
+		order: 2;
+	}
+
+	.odd & {
+		text-align: left;
+	}
 
 	@media (max-width: ${props => props.theme.bpSmall}) {
 		order: 2;
@@ -46,12 +50,21 @@ const PortfolioItemInfo = styled.div`
 
 		.even & {
 			order: 2;
+			text-align: center;
+		}
+
+		.odd & {
+			text-align: center;
 		}
 	}
 `;
 
 const PortfolioItemTitle = styled.h2`
-  font-size: 5rem;
+	font-size: 5rem;
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		font-size: 3rem;
+	}
 `;
 
 const PortfolioItemPreview = styled.div`
