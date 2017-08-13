@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 
 import data from './data';
 import utils from './utils';
@@ -12,6 +13,18 @@ import Introduction from './components/introduction';
 import Portfolio from './components/portfolio/portfolio';
 import PortfolioItem from './components/portfolio/portfolioitem';
 import About from './components/about';
+
+const customHistory = createBrowserHistory();
+const ga = window.ga || null;
+
+if (ga !== null) {
+	customHistory.listen((location, action) => {
+		ga('send', {
+			hitType: 'pageview',
+			page: location.pathname
+		});
+	});
+}
 
 class App extends React.Component {
 	state = {
@@ -45,7 +58,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Router>
+				<Router history={customHistory}>
 					<div>
 						<ScrollManager />
 
