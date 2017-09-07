@@ -20,6 +20,15 @@ const data = {
 				'url' : 'http://oliveoyl.com',
 				'featuredimage': '/images/portfolio/oliveoyl/oliveoyl-preview.jpg'
 			},
+			'isthewalldoneyet' : {
+				'background' : 'bg6',
+				'description' : 'This project served multiple purposes: 1. I wanted to play around with Firebase\'s hosting and real-time database 2. I wanted to play around with <a href="http://animejs.com/">animejs</a> and 3. I wanted to toss a bit of humor into what continues to be one of the least civil discussions that I have witnessed in my lifetime.',
+				'id' : 'isthewalldoneyet',
+				'tags' : 'Firebase Anime',
+				'title' : 'isthewalldoneyet.com',
+				'url' : 'http://isthewalldoneyet.com',
+				'featuredimage': '/images/portfolio/isthewalldoneyet/isthewalldoneyet-preview.jpg'
+			},
 			'thebrolodex' : {
 				'background' : 'bg2',
 				'description' : 'Quite possibly the dumbest idea I have ever had: The Brolodex is a random generator of ‘Brophemisms’ - names and words with the term <em>Bro</em> injected into them. It’s really just a WordPress blog with a bunch of custom attributes added to each post being exposed to the Angular front end via WP’s REST API. But it was a fun experience',
