@@ -28,7 +28,12 @@ const TextBlockDiv = styled.div`
 	@media (max-width: ${props => props.theme.bpSmall}) {
 		width: 100%;
 		margin: 3rem auto 0;
-		padding: 3rem 4rem 2rem;
+		padding: 3rem 2rem 2rem;
+
+		p {
+			line-height: 1.5;
+			font-size: 1.8rem;
+		}
 	}
 
 	&:before {

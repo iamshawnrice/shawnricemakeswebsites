@@ -22,11 +22,12 @@ const data = {
 			},
 			'isthewalldoneyet' : {
 				'background' : 'bg6',
-				'description' : 'This project served multiple purposes: 1. I wanted to play around with Firebase\'s hosting and real-time database 2. I wanted to play around with <a href="http://animejs.com/">animejs</a> and 3. I wanted to toss a bit of humor into what continues to be one of the least civil discussions that I have witnessed in my lifetime.',
+				'description' : 'This project served multiple purposes: 1. I wanted to play around with Firebase\'s hosting and real-time database 2. I wanted to experiment with <a href="http://animejs.com/">animejs</a> and 3. I wanted to toss a bit of humor into what continues to be one of the least civil discussions that I have witnessed in my lifetime.',
 				'id' : 'isthewalldoneyet',
 				'tags' : 'Firebase Anime',
 				'title' : 'isthewalldoneyet.com',
 				'url' : 'http://isthewalldoneyet.com',
+				'projecturl' : 'https://github.com/iamshawnrice/isthewalldoneyet',
 				'featuredimage': '/images/portfolio/isthewalldoneyet/isthewalldoneyet-preview.jpg'
 			},
 			'thebrolodex' : {
@@ -36,6 +37,7 @@ const data = {
 				'tags' : 'Angular WordPress VelocityJS',
 				'title' : 'thebrolodex.com',
 				'url' : 'http://thebrolodex.com',
+				'projecturl' : 'https://github.com/iamshawnrice/thebrolodex',
 				'featuredimage': '/images/portfolio/thebrolodex/thebrolodex-preview.jpg'
 			},
 			'ashleymorganbloom' : {
@@ -63,6 +65,7 @@ const data = {
 				'tags' : 'WordPress Angular',
 				'title' : 'iamshawnrice.com',
 				'url' : 'http://iamshawnrice.com',
+				'projecturl' : 'https://github.com/iamshawnrice/iamshawnrice',
 				'featuredimage': '/images/portfolio/iamshawnrice/iamshawnrice-preview.jpg'
 			}
 		}
