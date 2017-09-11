@@ -12,7 +12,8 @@ const MilestoneArticle = styled.article`
 	margin-bottom: 20rem;
 
 	h2 {
-		margin-bottom: 1em;
+		margin: 1em 0;
+		line-height: 1;
 	}
 
 	p {
@@ -39,6 +40,13 @@ const MilestoneArticle = styled.article`
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+
+	@media (max-width: ${props => props.theme.bpSmall}) {
+		p {
+			line-height: 1.5;
+			font-size: 1.8rem;
+		}
 	}
 `;
 
