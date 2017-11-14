@@ -4,16 +4,16 @@ import styled from 'styled-components';
 const TextBlockDiv = styled.div`
 	width: auto;
 	max-width: ${props => props.theme.paragraphMaxWidth};
-  margin: 8rem auto 2rem;
-  font-family: ${props => props.theme.sans};
-  text-align: center;
+	margin: 8rem auto 2rem;
+	font-family: ${props => props.theme.sans};
+	text-align: center;
 	padding: 6rem 4rem;
 	position: relative;
 
-  p {
-    font-size: 2.4rem;
+	p {
+		font-size: 2.4rem;
 		line-height: 2;
-		letter-spacing: .1rem;
+		letter-spacing: 0.1rem;
 	}
 
 	a {
@@ -29,15 +29,16 @@ const TextBlockDiv = styled.div`
 		width: 100%;
 		margin: 3rem auto 0;
 		padding: 3rem 2rem 2rem;
+		text-align: left;
 
 		p {
 			line-height: 1.5;
-			font-size: 1.8rem;
+			font-size: 2rem;
 		}
 	}
 
 	&:before {
-		content: "";
+		content: '';
 		display: block;
 		top: 0;
 		left: 2rem;
@@ -48,7 +49,7 @@ const TextBlockDiv = styled.div`
 	}
 
 	&:after {
-		content: "";
+		content: '';
 		display: block;
 		bottom: 0;
 		left: 2rem;
