@@ -1,0 +1,27 @@
+{
+  "name": "shawnricemakeswebsites",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshawnrice/shawnricemakeswebsites.git"
+  },
+  "author": "Shawn Rice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamshawnrice/shawnricemakeswebsites/issues"
+  },
+  "homepage": "https://github.com/iamshawnrice/shawnricemakeswebsites#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "typeplate-starter-kit": "^3.0.3"
+  }
+}

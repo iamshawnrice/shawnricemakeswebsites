@@ -1,0 +1,49 @@
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    padding: 1em;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgba($black, .8);
+}
+
+em {
+    font-family: $font-italic;
+}
+
+a {
+    color: $blue;
+}
+
+img {
+    max-width: 100%;
+
+    &.circle {
+        border-radius: 50%;
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.appwrapper {
+    margin: 0 auto;
+    max-width: $max-component-width;
+    width: 100%;
+
+    @media screen and (min-width: $screen-md) {
+        width: 75%;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+        width: 50%;
+    }
+}
