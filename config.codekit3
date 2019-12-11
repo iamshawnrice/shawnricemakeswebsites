@@ -407,7 +407,7 @@
 		"oF": 2
 		},
 	"/src/scripts/index.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -465,6 +465,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/style/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/style/components/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/style/components/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/style/components/_milestone.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/style/components/_milestone.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/style/components/_separator.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/style/components/_separator.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

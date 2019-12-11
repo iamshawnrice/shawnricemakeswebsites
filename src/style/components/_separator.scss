@@ -1,0 +1,47 @@
+.separator {
+    background: url("../../assets/img/geometry2.svg") no-repeat center;
+    background-size: 60px;
+    border: 0;
+    padding: 2em 0;
+    position: relative;
+
+    &:before,
+    &:after {
+        background-color: $gold;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        width: calc(50% - 40px);
+        z-index: $z1;
+    }
+
+    &:after {
+        right: 0;
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &__circle {
+        background-color: $white;
+        border: 1px solid $gold;
+        border-radius: 50%;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        z-index: $z2;
+    }
+
+    &__circle--left {
+        left: 0;
+    }
+
+    &__circle--right {
+        right: 0;
+    }
+}

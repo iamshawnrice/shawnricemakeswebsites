@@ -1,0 +1,19 @@
+.header__imagewrap {
+    background: url("../../assets/img/geometry1.svg") no-repeat center;
+    background-size: 100%;
+    display: flex;
+    text-align: center;
+    padding: 3em;
+
+    img {
+        border: 2px solid $gold;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $screen-md) {
+        margin: 0 auto;
+        padding: 3em;
+        width: 50%;
+    }
+}

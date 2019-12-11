@@ -24,14 +24,6 @@ a {
 
 img {
     max-width: 100%;
-
-    &.circle {
-        border-radius: 50%;
-    }
-}
-
-.centered {
-    text-align: center;
 }
 
 .appwrapper {
@@ -45,5 +37,17 @@ img {
 
     @media screen and (min-width: $screen-lg) {
         width: 50%;
+    }
+}
+
+.img {
+    &--circle {
+        border-radius: 50%;
+    }
+}
+
+.text {
+    &--centered {
+        text-align: center;
     }
 }
