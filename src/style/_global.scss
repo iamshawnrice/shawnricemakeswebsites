@@ -1,44 +1,42 @@
 @import "./variables";
 
+// elements
+
 * {
     box-sizing: border-box;
-}
-
-body {
-    background: $white;
-    padding: 1em;
-    color: $black;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: rgba($black, .8);
-}
-
-em {
-    font-family: $font-italic;
 }
 
 a {
     color: $blue;
 }
 
+body {
+    background: $black;
+    padding: .5em;
+    color: $black;
+}
+
+em {
+    font-family: $font-italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgba($black, .8);
+}
+
 img {
+    height: auto;
     max-width: 100%;
 }
 
-.appwrapper {
-    margin: 0 auto;
-    max-width: $max-component-width;
-    width: 100%;
+// one-offs
 
-    @media screen and (min-width: $screen-md) {
-        width: 75%;
-    }
-
-    @media screen and (min-width: $screen-lg) {
-        width: 50%;
-    }
+#bodywrap {
+    background: $white;
+    padding: .5em
 }
+
+// util classes
 
 .img {
     &--circle {
