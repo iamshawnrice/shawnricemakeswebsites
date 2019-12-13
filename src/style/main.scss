@@ -2,6 +2,9 @@
 @import "./typeplate-overrides";
 @import "../../node_modules/typeplate-starter-kit/scss/_typeplate-index";
 
+
+@import "./variables";
+@import "./extends";
 @import "./fonts";
 @import "./global";
 

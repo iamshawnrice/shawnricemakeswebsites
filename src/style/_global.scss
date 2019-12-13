@@ -1,5 +1,3 @@
-@import "./variables";
-
 // elements
 
 * {
@@ -33,7 +31,29 @@ img {
 
 #bodywrap {
     background: $white;
-    padding: .5em
+    padding: .5em;
+
+    &:after,
+    &:before {
+        @extend %pseudo-element;
+        height: .5em;
+        position: fixed;
+        z-index: $z10;
+    }
+
+    &:after {
+        background-color: $black;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    &:before {
+        background-color: $white;
+        bottom: .5em;
+        left: .5em;
+        right: .5em;
+    }
 }
 
 // util classes
