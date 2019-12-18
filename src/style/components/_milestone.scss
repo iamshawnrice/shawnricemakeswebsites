@@ -1,5 +1,11 @@
 .milestone {
     position: relative;
+    min-height: calc(100vh - 2em);
+    margin-bottom: .5em;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 
     @media screen and (max-width: $screen-md) {
         margin-bottom: 2em;
@@ -22,5 +28,23 @@
     &__title {
         text-align: center;
         margin-bottom: 0;
+    }
+
+    &__imagewrap {
+        margin: 0 auto;
+        max-width: 360px;
+        padding: 1em 3em;
+        text-align: center;
+
+        @media screen and (min-width: $screen-lg) {
+            margin: 0 auto;
+            padding: 3em;
+        }
+    }
+
+    &__image {
+        border: 2px solid $gold;
+        max-width: 230px;
+        width: 100%;
     }
 }
