@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="/style/main-min.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <!-- https://modernizr.com/download?csspositionsticky-flexbox-setclasses&q=stick -->
+  <script>!function(e,n,t){function r(e,n){return typeof e===n}function s(){var e,n,t,s,o,i,l;for(var a in x)if(x.hasOwnProperty(a)){if(e=[],n=x[a],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=r(n.fn,"function")?n.fn():n.fn,o=0;o<e.length;o++)i=e[o],l=i.split("."),1===l.length?Modernizr[l[0]]=s:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=s),C.push((s?"":"no-")+l.join("-"))}}function o(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(_&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),_?S.className.baseVal=n:S.className=n)}function i(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):_?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function f(e,n){return function(){return e.apply(n,arguments)}}function u(e,n,t){var s;for(var o in e)if(e[o]in n)return t===!1?e[o]:(s=n[e[o]],r(s,"function")?f(s,t||n):s);return!1}function c(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function p(n,t,r){var s;if("getComputedStyle"in e){s=getComputedStyle.call(e,n,t);var o=e.console;if(null!==s)r&&(s=s.getPropertyValue(r));else if(o){var i=o.error?"error":"log";o[i].call(o,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else s=!t&&n.currentStyle&&n.currentStyle[r];return s}function d(){var e=n.body;return e||(e=l(_?"svg":"body"),e.fake=!0),e}function m(e,t,r,s){var o,i,a,f,u="modernizr",c=l("div"),p=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=s?s[r]:u+(r+1),c.appendChild(a);return o=l("style"),o.type="text/css",o.id="s"+u,(p.fake?p:c).appendChild(o),p.appendChild(c),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(n.createTextNode(e)),c.id=u,p.fake&&(p.style.background="",p.style.overflow="hidden",f=S.style.overflow,S.style.overflow="hidden",S.appendChild(p)),i=t(c,e),p.fake?(p.parentNode.removeChild(p),S.style.overflow=f,S.offsetHeight):c.parentNode.removeChild(c),!!i}function y(n,r){var s=n.length;if("CSS"in e&&"supports"in e.CSS){for(;s--;)if(e.CSS.supports(c(n[s]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var o=[];s--;)o.push("("+c(n[s])+":"+r+")");return o=o.join(" or "),m("@supports ("+o+") { #modernizr { position: absolute; } }",function(e){return"absolute"==p(e,null,"position")})}return t}function v(e,n,s,o){function f(){c&&(delete T.style,delete T.modElem)}if(o=r(o,"undefined")?!1:o,!r(s,"undefined")){var u=y(e,s);if(!r(u,"undefined"))return u}for(var c,p,d,m,v,g=["modernizr","tspan","samp"];!T.style&&g.length;)c=!0,T.modElem=l(g.shift()),T.style=T.modElem.style;for(d=e.length,p=0;d>p;p++)if(m=e[p],v=T.style[m],i(m,"-")&&(m=a(m)),T.style[m]!==t){if(o||r(s,"undefined"))return f(),"pfx"==n?m:!0;try{T.style[m]=s}catch(h){}if(T.style[m]!=v)return f(),"pfx"==n?m:!0}return f(),!1}function g(e,n,t,s,o){var i=e.charAt(0).toUpperCase()+e.slice(1),l=(e+" "+P.join(i+" ")+i).split(" ");return r(n,"string")||r(n,"undefined")?v(l,n,s,o):(l=(e+" "+z.join(i+" ")+i).split(" "),u(l,n,t))}function h(e,n,r){return g(e,t,t,n,r)}var C=[],x=[],w={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){x.push({name:e,fn:n,options:t})},addAsyncTest:function(e){x.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr;var S=n.documentElement,_="svg"===S.nodeName.toLowerCase(),b="Moz O ms Webkit",P=w._config.usePrefixes?b.split(" "):[];w._cssomPrefixes=P;var z=w._config.usePrefixes?b.toLowerCase().split(" "):[];w._domPrefixes=z;var E={elem:l("modernizr")};Modernizr._q.push(function(){delete E.elem});var T={style:E.elem.style};Modernizr._q.unshift(function(){delete T.style}),w.testAllProps=g,w.testAllProps=h,Modernizr.addTest("flexbox",h("flexBasis","1px",!0));var k=w._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];w._prefixes=k,Modernizr.addTest("csspositionsticky",function(){var e="position:",n="sticky",t=l("a"),r=t.style;return r.cssText=e+k.join(n+";"+e).slice(0,-e.length),-1!==r.position.indexOf(n)}),s(),o(C),delete w.addTest,delete w.addAsyncTest;for(var N=0;N<Modernizr._q.length;N++)Modernizr._q[N]();e.Modernizr=Modernizr}(window,document);</script>
 </head>
 
 <body>
@@ -23,8 +26,8 @@
 
     <!-- Add your site or application content here -->
   <div id="bodywrap">
-    <section class="header">
-      <div class="header__hero">
+    <section class="vignette header">
+      <div class="vignette__title">
         <div class="header__imagewrap">
             <img class="img img--circle" src="/assets/img/headshot.jpg" alt="headshot of Shawn Rice" />
         </div>
@@ -32,106 +35,93 @@
         <h2 class="text text--centered">Hi. My name is Shawn.</h2>
       </div>
 
-      <p>I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually best one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to professional web developer did not occur overnight. It all started when...</p>
+      <div class="vignette__scene">
+        <p class="vignette__copy">I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually best one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to professional web developer did not occur overnight. It all started when...</p>
+      </div>
     </section>
 
-    <section>
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
-
-      <div class="milestone">
-        <header class="milestone__header">
+    <section class="milestones">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">sometime in 2011</p>
           <h3 class="milestone__title">Fish Out of Water</h3>
         </header>
 
-        <p>Fed up with the gypsy lifestyle of a theater atrist, I was working as a rental agent for a real estate broker in Brooklyn. Ony day my boss decided that I should make a website for one of our new properties (though I had made no indications that I was able to do so). Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied: he paid me a couple hundred dollars and immediately asked for another. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.</p>
+        <div class="vignette__scene">
+          <p>Fed up with the gypsy lifestyle of a theater atrist, I was working as a rental agent for a real estate broker in Brooklyn. Ony day my boss decided that I should make a website for one of our new properties (though I had made no indications that I was able to do so). Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied: he paid me a couple hundred dollars and immediately asked for another. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">September 2011 - September 2012</p>
           <h3 class="milestone__title">Freelancing Across America</h3>
         </header>
 
-        <p>Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing Rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working beneath someone more knowledgeable than myself.</p>
+        <div class="vignette__scene">
+          <p>Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing Rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working beneath someone more knowledgeable than myself.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">September 2012 - February 2013</p>
           <h3 class="milestone__title">Meanwhile Back in the City...</h3>
         </header>
 
-        <p>Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="http://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and contributed designs to almost half of the fifteen sites I did for them.</p>
+        <div class="vignette__scene">
+          <p>Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="http://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and contributed designs to almost half of the fifteen sites I did for them.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">February 2013 - July 2014</p>
           <h3 class="milestone__title">A Different Kind of Agency</h3>
         </header>
 
-        <p>During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. Well...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, married a fantastic girl named Heather, and began working for a full-service creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the exciting world of ecommerce, and showed me how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment up front that saves hours and hours of emails and consultation down the road.</p>
+        <div class="vignette__scene">
+          <p>During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. Well...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, married a fantastic girl named Heather, and began working for a full-service creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the exciting world of ecommerce, and showed me how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment up front that saves hours and hours of emails and consultation down the road.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">July 2014 - February 2016</p>
           <h3 class="milestone__title">There’s No I in Team</h3>
         </header>
 
-        <p>The agency work was fast paced and exciting, but I felt as though I was missing out by being the only developer in the room. I spent the next two and a half years working with two great teams at <a href="https://izea.com">Izea</a> and <a href="http://junyo.com">Junyo</a>. I learned the importance of code standards, the fine art of collaboration via GitHub, and the pain of tech debt. I had the opportunity to work with a great variety of technologies including Ruby on Rails, Bootstrap, Django, Backbone, Angular, a little bit of Highcharts and a little bit of Node. It was truly inspiring to be surrounded by so many people who were committed to pushing their skills further and doing good work.</p>
+        <div class="vignette__scene">
+          <p>The agency work was fast paced and exciting, but I felt as though I was missing out by being the only developer in the room. I spent the next two and a half years working with two great teams at <a href="https://izea.com">Izea</a> and <a href="http://junyo.com">Junyo</a>. I learned the importance of code standards, the fine art of collaboration via GitHub, and the pain of tech debt. I had the opportunity to work with a great variety of technologies including Ruby on Rails, Bootstrap, Django, Backbone, Angular, a little bit of Highcharts and a little bit of Node. It was truly inspiring to be surrounded by so many people who were committed to pushing their skills further and doing good work.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">February 2016 - December 2017</p>
           <h3 class="milestone__title">Ecommerce in the Holy City</h3>
         </header>
 
-        <p>Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, welcoming music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="http://blueacorn.com">Blue Acorn</a> gave me the opportunity to work on a great team with some high profile clients via Salesforce Commerce Cloud. My main takeaways from Blue Acorn were how to achieve pixel perfect implementations across all browsers, how to keep code clean when bound by strict deadlines, and the importance of strong UX.</p>
+        <div class="vignette__scene">
+          <p>Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, welcoming music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="http://blueacorn.com">Blue Acorn</a> gave me the opportunity to work on a great team with some high profile clients via Salesforce Commerce Cloud. My main takeaways from Blue Acorn were how to achieve pixel perfect implementations across all browsers, how to keep code clean when bound by strict deadlines, and the importance of strong UX.</p>
+        </div>
       </div>
 
-      <div aria-hidden="true" class="separator">
-        <span class="separator__circle separator__circle--left"></span>
-        <span class="separator__circle separator__circle--right"></span>
-      </div>
 
-      <div class="milestone">
-        <header class="milestone__header">
+      <div class="vignette milestone">
+        <header class="vignette__title">
           <p class="milestone__date">December 2017 - This Very Day</p>
           <h3 class="milestone__title">Talking to the Future</h3>
         </header>
 
-        <p>Feeling the gravitational pull of React and a more modern development workflow, I wanted to move away from one-off ecommerce projects and move toward a codebase that I would need to live with and maintain for extended periods of time. I was introduced to <a href="https://xappmedia.com/">XAPPmedia</a> through a former colleague. XAPPmedia specializes in custom voice applications and are on the front lines of pushing the limits of what can be accomplished via conversation. It's an absolute pleasure to be involved in what is aligning to be as profound a paradigm shift in how humans issue commands to computers as the touchscreen.</p>
+        <div class="vignette__scene">
+          <p>Feeling the gravitational pull of React and a more modern development workflow, I wanted to move away from one-off ecommerce projects and move toward a codebase that I would need to live with and maintain for extended periods of time. I was introduced to <a href="https://xappmedia.com/">XAPPmedia</a> through a former colleague. XAPPmedia specializes in custom voice applications and are on the front lines of pushing the limits of what can be accomplished via conversation. It's an absolute pleasure to be involved in what is aligning to be as profound a paradigm shift in how humans issue commands to computers as the touchscreen.</p>
+        </div>
       </div>
     </section>
   </div>

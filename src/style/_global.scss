@@ -27,33 +27,18 @@ img {
     max-width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 // one-offs
 
 #bodywrap {
     background: $white;
+    max-height: calc(100vh - 1em);
+    // todo: add momentum scrolling to this
+    overflow-y: scroll;
     padding: .5em;
-
-    &:after,
-    &:before {
-        @extend %pseudo-element;
-        height: .5em;
-        position: fixed;
-        z-index: $z10;
-    }
-
-    &:after {
-        background-color: $black;
-        bottom: 0;
-        width: 100%;
-        left: 0;
-    }
-
-    &:before {
-        background-color: $white;
-        bottom: .5em;
-        left: .5em;
-        right: .5em;
-    }
 }
 
 // util classes

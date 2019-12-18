@@ -1,9 +1,9 @@
-%pseudo-element {
-    content: "";
-    display: block;
-}
-
 %flex-column {
     display: flex;
     flex-direction: column;
+}
+
+%pseudo-element {
+    content: "";
+    display: block;
 }

@@ -1,0 +1,50 @@
+.vignette {
+    @extend %flex-column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media screen and (min-width: $screen-lg) {
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: calc(100vh - 2em);
+    }
+
+    &__title {
+        @extend %flex-column;
+        position: relative;
+        margin: 2em 0;
+
+        @media screen and (min-width: $screen-md) {
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $screen-lg) {
+            flex: 1 1 auto;
+            max-width: 40%;
+        }
+
+        @media screen and (min-width: $screen-lg + 1) {
+            max-width: 50%;
+        }
+    }
+
+    &__scene {
+        @extend %flex-column;
+        align-items: center;
+        max-width: 600px;
+
+        @media screen and (min-width: $screen-lg) {
+            flex: 1 1 auto;
+            justify-content: center;
+            max-width: none;
+            padding: .5em;
+            max-width: 60%;
+        }
+
+        @media screen and (min-width: $screen-lg + 1) {
+            max-width: 50%;
+        }
+    }
+}

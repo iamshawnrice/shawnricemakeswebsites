@@ -1,4 +1,5 @@
 (() => {
+    // pulled from https://stackoverflow.com/a/9899701
     function docReady(fn) {
         // see if DOM is already available
         if (document.readyState === "complete" || document.readyState === "interactive") {

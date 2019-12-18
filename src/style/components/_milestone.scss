@@ -1,17 +1,8 @@
 .milestone {
     position: relative;
 
-    &__header {
-        background-color: $white;
-        margin-bottom: 1em;
-        padding-bottom: 1em;
-        position: sticky;
-        top: 0;
-    }
-
-    &__title {
-        text-align: center;
-        margin-bottom: 0;
+    @media screen and (max-width: $screen-md) {
+        margin-bottom: 2em;
     }
 
     &__date {
@@ -20,5 +11,16 @@
         font-family: $font-smallcaps;
         margin: 0;
         letter-spacing: 1px;
+    }
+
+    &__header {
+        background-color: $white;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 0;
     }
 }

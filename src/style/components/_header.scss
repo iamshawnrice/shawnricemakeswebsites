@@ -1,10 +1,5 @@
 .header {
-    min-height: calc(100vh - 1em);
-
-    &__hero {
-        @extend %flex-column;
-        position: relative;
-    }
+    min-height: calc(100vh - 2em);
 
     &__imagewrap {
         @extend %flex-column;
@@ -20,10 +15,9 @@
             flex: 0 0 auto;
         }
 
-        @media screen and (min-width: $screen-md) {
+        @media screen and (min-width: $screen-lg) {
             margin: 0 auto;
             padding: 3em;
-            width: 50%;
         }
     }
 }
