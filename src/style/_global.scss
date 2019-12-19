@@ -36,9 +36,9 @@ p {
 #bodywrap {
     background: $white;
     max-height: calc(100vh - 1em);
-    // todo: add momentum scrolling to this
-    overflow-y: scroll;
+    overflow-y: scroll; // has to be scroll, not auto
     padding: .5em;
+    -webkit-overflow-scrolling: touch;
 }
 
 // util classes

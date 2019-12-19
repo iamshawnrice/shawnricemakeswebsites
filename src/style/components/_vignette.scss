@@ -2,7 +2,6 @@
     @extend %flex-column;
     align-items: center;
     justify-content: center;
-    position: relative;
 
     @media screen and (min-width: $screen-lg) {
         align-items: stretch;

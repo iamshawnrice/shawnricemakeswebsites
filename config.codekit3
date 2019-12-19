@@ -406,16 +406,38 @@
 		"oAP": "/build/index.html",
 		"oF": 2
 		},
+	"/src/scripts/constants.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/scripts/constants-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/scripts/index.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/scripts/index-min.js",
 		"oF": 2,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
+		},
+	"/src/scripts/sticky.js": {
+		"bF": 6,
+		"ft": 64,
+		"ma": 1,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/build/scripts/sticky-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"/src/style/_extends.scss": {
 		"aP": 0,
@@ -2455,10 +2477,10 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"bundleFormat": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
