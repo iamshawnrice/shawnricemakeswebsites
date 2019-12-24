@@ -1,4 +1,4 @@
-import { initStickyObservers } from "./sticky";
+import { initIntersectObservers } from "./intersect";
 
 // pulled from https://stackoverflow.com/a/9899701
 function docReady(fn) {
@@ -19,5 +19,5 @@ function init() {
         height: window.innerHeight
     };
 
-    initStickyObservers(windowDims);
+    initIntersectObservers(windowDims);
 }

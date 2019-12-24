@@ -12,6 +12,7 @@
 
     &__title {
         @extend %flex-column;
+        @include transitioned;
         position: relative;
         margin: 2em 0;
 
@@ -31,6 +32,7 @@
 
     &__scene {
         @extend %flex-column;
+        @include transitioned;
         align-items: center;
         max-width: 600px;
 
@@ -45,5 +47,15 @@
         @media screen and (min-width: $screen-lg + 1) {
             max-width: 50%;
         }
+    }
+}
+
+[data-intersect-state="ready"] {
+    .vignette__title {
+        transform: translateX(50%);
+    }
+    .vignette__scene {
+        transform: translateY(5%);
+        opacity: 0;
     }
 }
