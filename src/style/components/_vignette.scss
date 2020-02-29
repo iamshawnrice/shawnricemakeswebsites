@@ -1,5 +1,6 @@
 .vignette {
     @extend %flex-column;
+    @include transitioned;
     align-items: center;
     justify-content: center;
 
@@ -8,6 +9,7 @@
         flex-direction: row;
         justify-content: space-between;
         min-height: calc(100vh - 2em);
+        overflow-y: hidden;
     }
 
     &__title {
@@ -32,7 +34,7 @@
 
     &__scene {
         @extend %flex-column;
-        @include transitioned;
+        @include transitioned(500ms, 500);
         align-items: center;
         max-width: 600px;
 
@@ -56,6 +58,16 @@
     }
     .vignette__scene {
         transform: translateY(5%);
+        opacity: 0;
+    }
+}
+
+[data-intersect-state="go"] {
+    .vignette__title {
+        transform: translateX(0);
+    }
+    .vignette__scene {
+        transform: translateY(0);
         opacity: 0;
     }
 }

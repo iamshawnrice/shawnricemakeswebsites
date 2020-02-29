@@ -410,7 +410,7 @@
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
-		"mi": 1,
+		"mi": 0,
 		"oA": 1,
 		"oAP": "/build/scripts/constants-min.js",
 		"oF": 0,
@@ -421,7 +421,7 @@
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/build/scripts/index-min.js",
 		"oF": 2,
@@ -556,19 +556,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/style/components/_steps.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/style/components/_steps.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/src/style/components/_vignette.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -606,7 +593,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-tar",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 598325637.16275406
+	"lastBuiltDate": 599077480.25105906
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2504,7 +2491,7 @@
 		"autoOutputPathStyle": 0,
 		"bundleFormat": 0,
 		"createSourceMap": 1,
-		"minifyOutput": 1,
+		"minifyOutput": 0,
 		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 1
 		},
