@@ -56,18 +56,6 @@ const data = {
         featuredimage:
           "/images/portfolio/hglightingdesign/hglightingdesign-preview.jpg",
       },
-      iamshawnrice: {
-        background: "bg5",
-        description:
-          "I have been obsessed with music for as long as I can remember. As an outlet for all of the exciting music discoveries I make throughout my week and in an effort to keep my writing knives sharp, I started a blog that relates a playlist of tunes to a life experience. The blog is powered by WordPress, so when the time comes to upgrade/replace the Angular 1 frontend I can do so quickly & painlessly",
-        id: "iamshawnrice",
-        tags: "WordPress Angular",
-        title: "iamshawnrice.com",
-        url: "http://iamshawnrice.com",
-        projecturl: "https://github.com/iamshawnrice/iamshawnrice",
-        featuredimage:
-          "/images/portfolio/iamshawnrice/iamshawnrice-preview.jpg",
-      },
     },
   },
   pages: {
@@ -77,7 +65,7 @@ const data = {
         alt: "Shawn, Heather, & Leonardo Rice",
       },
       copy:
-        'I live in Charleston, SC with my wife Heather (she’s the cute one on the left) and son Leonardo (he’s the cute one in the middle). We are in charge of feeding and entertaining a black Lab named Red and an orange tabby named CC (though I pretty much universally refer to him as Cecil). When not taking care of animals or children, we like to work in the yard, tromp around in the woods, eat delicious food, and travel. You can learn more about me <a href="http://iamshawnrice.com">here</a> and more about Heather <a href="http://iamheatherrice.com">here</a>.',
+        'I live in Charleston, SC with my wife Heather (she’s the cute one on the left) and son Leonardo (he’s the cute one in the middle). We are in charge of feeding and entertaining a black Labrador named Red and an orange tabby named CC (though I pretty universally refer to him as Cecil). When not taking care of animals or children, we like to work in the yard, tromp around in the woods, eat delicious food, and visit our favorite place in the US: Western North Carolina. You can learn more about me <a href="http://iamshawnrice.com">here</a> and more about Heather <a href="http://iamheatherrice.com">here</a>.',
     },
     introduction: {
       image: {
@@ -87,7 +75,7 @@ const data = {
       introcopy: {
         heading: "Hi. I’m Shawn Rice.",
         introduction:
-          "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually best one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to mid-level web developer did not occur overnight. It all started when...",
+          "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually right one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to senior-level web developer did not occur overnight. It all started when...",
       },
       milestones: [
         {
@@ -154,7 +142,7 @@ const data = {
           date: "December 2018 - February 2020",
           title: "Talking to the Future",
           description:
-            'Feeling like I was being left behind by a rapidly evolving industry, I set upon learning React, Redux, and Typescript in my spare time. Soon as I had a firm grasp on them, I wanted to find a posistion that would elevate my skills beyond jQuery enhanced server-rendered apps. And that is how I found <a href="http://xappmedia.ai/">XAPPMedia</a>. XAPPMedia is helping to define what is possible with voice-powered software (think Siri, Alexa, or Google Assistant). During my time with them, I became thoroughly immersed in the entire lifecycle of the modern development stack: from wireframing and defining requirements, to development and testing, all the way to deployment via CICD.',
+            'Feeling like I was being left behind by a rapidly evolving industry, I set upon learning React, Redux, and Typescript in my spare time. Soon as I had a firm grasp on them, I sought a posistion that would elevate my skills beyond jQuery enhanced server-rendered apps. And that is how I found <a href="http://xappmedia.ai/">XAPPMedia</a>. XAPPMedia is helping to define what is possible with voice-powered software (think Siri, Alexa, or Google Assistant). During my time with them, I became thoroughly immersed in the entire lifecycle of the modern development stack: from wireframing and defining requirements, to development and testing, all the way to deployment via CICD.',
         },
         {
           image: {
