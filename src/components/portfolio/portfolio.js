@@ -51,7 +51,7 @@ const Portfolio = () => {
         <PortfolioSection>
             <h1>Well...this is embarrassing</h1>
 
-            <p>Like many in the enterprise world, my work for the last six or so years has been cloistered behind a paywall. And while, I stand behind (nearly) every bit of code I've ever shipped, flexing projects I did before 2017 would not be an accurate representation of my current skillset.</p>
+            <p>Like many in the enterprise world, my work for the last six or so years has been cloistered paywalls. And while, I stand behind (nearly) every bit of code I've ever shipped, flexing projects I did before 2017 would not be an accurate representation of my current skillset.</p>
 
             <p>So in lieu of a bunch of sites that aren't even accessible on public servers anymore, I present some of my thought processes/philosophies/opinions with regard to making things happen with code.</p>
 
@@ -74,7 +74,6 @@ const Portfolio = () => {
 
             <ul>
                 <li>Only be as specific as you need to be.</li>
-                <li>Not every layout problem is a design system problem - one-off styles are ok when used sparingly.</li>
                 <li>If your selector is more than 4 elements long, there is probably an opportunity to simplify.</li>
                 <li>BEM is good.</li>
             </ul>
@@ -85,9 +84,7 @@ const Portfolio = () => {
                 <li>Functional Programming is easier to test and maintain.</li>
                 <li>Self-describing code is better than comments most of the time.</li>
                 <li>Keep your modules small.</li>
-                <li>Wrapping 3rd party libraries makes breaking changes when upgrading less painful.</li>
                 <li>Test coverage is not optional - especially when facing a deadline.</li>
-                <li>The async keyword is our friend.</li>
             </ul>
 
             <h3>TypeScript</h3>
@@ -107,8 +104,8 @@ const Portfolio = () => {
                 <li>Don’t use 3rd party libraries unless truly necessary.</li>
                 <li>Don’t use React to do what the browser can do for you.</li>
                 <li>Check for performance issues early and often.</li>
-                <li>I prefer thunks over epics.</li>
-                <li>I prefer cssModules over any other styling method</li>
+                <li>Thunks are easier to reason about than epics.</li>
+                <li>CssModules &gt; any other styling method</li>
             </ul>
 
             <h3>Other/Misc</h3>

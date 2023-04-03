@@ -132,7 +132,7 @@ const data = {
           date: "February 2016 - December 2018",
           title: "Ecommerce in the Holy City",
           description:
-            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made it the perfect place to settle down and start a family. Blue Acorn has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.',
+            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made it the perfect place to settle down and start a family. Blue Acorn gave me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It was also the first time I worked with proprietary software - instilling within me a profound appreciation for the open source world.',
         },
         {
           image: {
