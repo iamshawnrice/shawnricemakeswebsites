@@ -75,14 +75,14 @@ const data = {
       introcopy: {
         heading: "Hi. I’m Shawn Rice.",
         introduction:
-          "I am a web developer living and working in Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually right one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to senior-level web developer did not occur overnight. It all started when...",
+          "I am a web developer based in beautiful Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually right one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to senior-level web developer did not occur overnight. It all started when...",
       },
       milestones: [
         {
           date: "Sometime in 2011",
           title: "Fish Out of Water",
           description:
-            "Fed up with the gypsy lifestyle of a theater atrist, I was working as a rental agent for a real estate broker in Brooklyn. Ony day my boss decided that I should make a website for one of our new properties (though I had made no indications that I was able to do so). Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, he was satisfied: he paid me a couple hundred dollars and immediately asked for another. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.",
+            "Fed up with the gypsy lifestyle of a theater artist, I was working as a rental agent for a real estate broker in Brooklyn. One day my boss decided that I should make a website for one of our new properties (though I had made no indications that I was able to do so). Never one to back away from a challenge, I obtained a copy of Dreamweaver and a book on HTML. Within a week we had a perfectly horrible little 4 page site on our hands. Lucky for me, it worked out: he paid me a couple hundred dollars and immediately asked for another. This was what those in the world of dramatic literature refer to as the ‘Inciting Incident’.",
         },
         {
           image: {
@@ -92,7 +92,7 @@ const data = {
           date: "September 2011 - September 2012",
           title: "Freelancing Across America",
           description:
-            "Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - I didn’t care about anything exept learning new things. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing Rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working beneath someone more knowledgeable than myself.",
+            "Once I had a solid grasp on the basics, I decided to bounce around the country for a bit: my travels took me from New York to Minnesota then Connecticut, Pennsylvania, Maine, up to Alaska, down to Florida, and eventually back to New York. All the while designing and building WordPress sites for anyone at any price - my only concern was that every project gave me the opportunity to learn something new. I made sites for actors, singers, voiceover artists, a chocolatier, service providers in the fracking industry, a moving company, and a cross-dressing Rabbi. I learned many many lessons during this time but the two main takeaways were: 1. that my design capabilities were limited and 2. that I wanted to learn by working beneath someone more knowledgeable than myself.",
         },
         {
           image: {
@@ -102,7 +102,7 @@ const data = {
           date: "September 2012 - February 2013",
           title: "Meanwhile Back in the City...",
           description:
-            'Upon returning to New York, I immediately obtained a design internship with <a href="http://www.magnetmediafilms.com">Magnet Media Films</a> - a video production company based in Manhattan. I was able to contribute to a significant amount client deliverables in my 3 months there and learned a ton about design for both print and web. To round out my schedule, I began freelancing with <a href="http://kingfeatures.com">King Features Syndicate</a> - the company which manages the rights to just about every comic strip you might be able to think of. Some of the sites were designed by their team, but I was able to put my new design skills to work and contributed designs to almost half of the fifteen sites I did for them. Some of my favorites include <a href="http://beetlebailey.com">Beetle Bailey</a>, <a href="http://hagarthehorrible.com">Hagar the Horrible</a>, and <a href="http://oliveoyl.com">Olive Oyl</a>.',
+            "Upon returning to New York, I immediately obtained a design internship with Magnet Media Films - a video production company based in Manhattan. I was able to contribute to a significant amount of client deliverables in my 3 months there and learned volumes about design for both print and web. To round out my schedule, I began freelancing with King Features Syndicate - the company which manages the rights to just about every comic strip you might be able to think of. Many of the sites were designed by their team, but I was able to put my new design skills to work and contributed designs to almost half of the fifteen sites I did for them. Some of my favorites include Beetle Bailey, Hagar the Horrible, and Olive Oyl.",
         },
         {
           image: {
@@ -112,7 +112,7 @@ const data = {
           date: "February 2013 - July 2014",
           title: "A Different Kind of Agency",
           description:
-            'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. Well...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, married a fantastic girl named Heather, and began working for a full-service creative agency called <a href="https://dppad.com">Different Perspective</a>. My time at Different Perspective gave me experience with multilanguage sites, introduced me to the exciting world of ecommerce, and showed me how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment up front that saves hours and hours of emails and consultation down the road.',
+            'During my year of travel, I reconnected with a long time friend from college who convinced me to move back to Florida and become her husband. Well...it may not have played out exactly like that, but that‘s a story for a different time. The important detail is that I returned to Florida, married a fantastic girl named Heather, and began working for a full-service creative agency called Different Perspective. My time at Different Perspective gave me experience with multi language sites, introduced me to the exciting world of ecommerce, and showed me how to manage relationships with clients. It also taught me that taking the time to compose good documentation is a tiny investment up front that saves hours and hours of emails and consultation down the road.',
         },
         {
           image: {
@@ -122,7 +122,7 @@ const data = {
           date: "July 2014 - February 2016",
           title: "There’s No I in Team",
           description:
-            'The agency work was fast paced and exciting, but I felt as though I was missing out by being the only developer in the room. I spent the next two and a half years working with two great teams at <a href="https://izea.com">Izea</a> and <a href="http://junyo.com">Junyo</a>. I learned the importance of code standards, the fine art of collaboration via GitHub, and the pain of tech debt. I had the opportunity to work with a great variety of technologies including Ruby on Rails, Bootstrap, Django, Backbone, Angular, a little bit of Highcharts and a little bit of Node. It was truly inspiring to be surrounded by so many people who were committed to pushing their skills further and doing good work.',
+            'The agency work was fast paced and exciting, but I felt as though I was missing out by being the only developer in the room. I spent the next two and a half years working with two great teams at Izea and Junyo. I learned the importance of code standards, the fine art of collaboration via GitHub, and the pain of tech debt. I had the opportunity to work with a great variety of technologies including Ruby on Rails, Bootstrap, Django, Backbone, Angular, Highcharts and a little bit of Node. It was truly inspiring to be surrounded by so many people who were committed to pushing their skills further and doing good work.',
         },
         {
           image: {
@@ -132,7 +132,7 @@ const data = {
           date: "February 2016 - December 2018",
           title: "Ecommerce in the Holy City",
           description:
-            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made relocating anywhere else seem absurd. <a href="http://blueacorn.com">Blue Acorn</a> has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.',
+            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made it the perfect place to settle down and start a family. Blue Acorn has given me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It is also the first time I have worked with proprietary software - instilling within me a profound appreciation for the open source world.',
         },
         {
           image: {
@@ -142,17 +142,27 @@ const data = {
           date: "December 2018 - February 2020",
           title: "Talking to the Future",
           description:
-            'Feeling like I was being left behind by a rapidly evolving industry, I set upon learning React, Redux, and Typescript in my spare time. Soon as I had a firm grasp on them, I sought a posistion that would elevate my skills beyond jQuery enhanced server-rendered apps. And that is how I found <a href="http://xappmedia.ai/">XAPPMedia</a>. XAPPMedia is helping to define what is possible with voice-powered software (think Siri, Alexa, or Google Assistant). During my time with them, I became thoroughly immersed in the entire lifecycle of the modern development stack: from wireframing and defining requirements, to development and testing, all the way to deployment via CICD.',
+            'Feeling like I was being left behind by a rapidly evolving industry, I set upon learning React, Redux, and Typescript in my spare time. As soon as I had a firm grasp on them, I sought a position that would elevate my skills beyond jQuery enhanced server-rendered apps. And that is how I found XAPPMedia. XAPPMedia is helping to define what is possible with voice-powered software (Siri, Alexa, and Google Assistant). During my time with them, I became thoroughly immersed in the entire lifecycle of the modern development stack: from wireframing and defining requirements, to development and testing, all the way to deployment via CICD.',
         },
         {
           image: {
             file: "/images/history/mokriya.png",
             alt: "mokriya logo",
           },
-          date: "March 2020 - This Very Day",
+          date: "March 2020 - September 2020",
           title: "Tying it all Together",
           description:
-            'An opportunity to work with a long-time mentor presented itself and I had to jump at the chance. <a href="https://mokriya.com/">Mokriya</a> is a globally distributed consultancy that provides design, development, and project management expertise to its clients. It is also a great place to work. I have had the opportunity to contribute in meaningful ways to products that help people while collaborating with team members that are literally all over the planet. It has taught me so much about the importance of clarity in both written and verbal communication, the effectiveness of linters and coding standards to keep everyone on the same page, and the power of distributed teams.',
+            'An opportunity to work with a long-time mentor presented itself and I had to jump at the chance. Mokriya is a globally distributed consultancy that provides design, development, and project management expertise to its clients. It is also a great place to work. I had the opportunity to contribute in meaningful ways to products that help people while collaborating with team members that are literally all over the planet. It has taught me so much about the importance of clarity in both written and verbal communication, the effectiveness of linters and coding standards to keep everyone on the same page, and the power of distributed teams.',
+        },
+        {
+          image: {
+            file: "/images/history/mokriya.png",
+            alt: "mokriya logo",
+          },
+          date: "September 2020 - This Very Day",
+          title: "Hitting the mark",
+          description:
+            'After my project with Mokriya was complete, I wanted to work on something big. Like mission-critical, life-saving, make the world a better place, big. Enter Mark43. During my time here, I have learned how to responsibly make significant changes to an app that runs 24/7, the value of mentorship for both the mentor and mentee, what to look for when interviewing candidates, and how to juggle tech debt, user-experience, and just plain getting things done. It’s by far the most challenging role I’ve faced in my career so far, but also the most fulfilling.',
         },
       ],
     },
