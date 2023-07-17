@@ -65,7 +65,7 @@ const data = {
         alt: "Shawn, Heather, & Leonardo Rice",
       },
       copy:
-        'I live in Charleston, SC with my wife Heather (she’s the cute one on the left) and son Leonardo (he’s the cute one in the middle). We are in charge of feeding and entertaining a black Labrador named Red and an orange tabby named CC (though I pretty universally refer to him as Cecil). When not taking care of animals or children, we like to work in the yard, tromp around in the woods, eat delicious food, and visit our favorite place in the US: Western North Carolina. You can learn more about me <a href="http://iamshawnrice.com">here</a> and more about Heather <a href="http://iamheatherrice.com">here</a>.',
+        'I live in Charleston, SC with my wife Heather (she’s the cute one on the right), son Leonardo (he’s the cute one in the front enjoying a freeze pop), and daughter Eliza (she’s the cute one I am holding in the star-spangled dress). We are in charge of feeding and entertaining a black Labrador named Red and an orange tabby named CC (though I pretty universally refer to him as Cecil). When not taking care of animals or children, we like to work in the yard, tromp around in the woods, eat delicious food, and visit our favorite place in the US: Western North Carolina. You can learn more about me <a href="http://iamshawnrice.com">here</a> and more about Heather <a href="http://iamheatherrice.com">here</a>.',
     },
     introduction: {
       image: {
@@ -106,8 +106,8 @@ const data = {
         },
         {
           image: {
-            file: "/images/history/dp-3d-logo.png",
             alt: "Different Perspective Logo",
+            file: "/images/history/different-perspective.png",
           },
           date: "February 2013 - July 2014",
           title: "A Different Kind of Agency",
@@ -132,7 +132,7 @@ const data = {
           date: "February 2016 - December 2018",
           title: "Ecommerce in the Holy City",
           description:
-            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made it the perfect place to settle down and start a family. Blue Acorn gave me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It was also the first time I worked with proprietary software - instilling within me a profound appreciation for the open source world.',
+            'Seeking an exit from Florida before we started our family, Heather and I felt the pull of Charleston in a big way - the thriving tech scene, active music community, and phenomenal restaurants made it the perfect place to settle down and start a family. Blue Acorn (now Blue Acorn iCi) gave me the opportunity to work on a great team with some high profile clients via the Salesforce Commerce Cloud platform. It was also the first time I worked with proprietary software - instilling within me a profound appreciation for the open source world.',
         },
         {
           image: {
@@ -156,7 +156,7 @@ const data = {
         },
         {
           image: {
-            file: "/images/history/mokriya.png",
+            file: "/images/history/mark43.png",
             alt: "mokriya logo",
           },
           date: "September 2020 - This Very Day",

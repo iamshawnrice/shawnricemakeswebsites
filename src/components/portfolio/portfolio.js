@@ -51,9 +51,9 @@ const Portfolio = () => {
         <PortfolioSection>
             <h1>Well...this is embarrassing</h1>
 
-            <p>Like many in the enterprise world, my work for the last six or so years has been cloistered paywalls. And while, I stand behind (nearly) every bit of code I've ever shipped, flexing projects I did before 2017 would not be an accurate representation of my current skillset.</p>
+            <p>Like many in the enterprise world, my work for the last six or so years has been cloistered behind paywalls. And while, I stand behind (nearly) every bit of code I've ever shipped, flexing projects I did before 2017 would not be an accurate representation of my current skill set.</p>
 
-            <p>So in lieu of a bunch of sites that aren't even accessible on public servers anymore, I present some of my thought processes/philosophies/opinions with regard to making things happen with code.</p>
+            <p>So in lieu of a bunch of sites that aren't even accessible on public servers anymore, I present some of my thoughts/philosophies/opinions with regard to making things happen with code.</p>
 
             <h2>Opinions</h2>
 
@@ -67,7 +67,7 @@ const Portfolio = () => {
 
             <ul>
                 <li>Acccessibility matters</li>
-                <li>Less markup (read: divs) is usually better than more.</li>
+                <li>Less markup is usually better than more.</li>
             </ul>
 
             <h3>CSS</h3>
