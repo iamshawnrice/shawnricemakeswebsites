@@ -75,7 +75,7 @@ const data = {
       introcopy: {
         heading: "Hi. I’m Shawn Rice.",
         introduction:
-          "I am a web developer based in beautiful Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually right one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to senior-level web developer did not occur overnight. It all started when...",
+          "I am a web developer based in beautiful Charleston, SC. I am a firm believer in the path of least resistance and maintain that the simplest solution is the usually the right one. My career started in the arts world, so I am well acquainted with communicating and collaborating with people from diverse disciplines and backgrounds. And it has given me a tremendous amount of empathy for non-technical users. However, the journey from under-employed actor/failing real-estate agent to senior-level web developer did not occur overnight. It all started when...",
       },
       milestones: [
         {
